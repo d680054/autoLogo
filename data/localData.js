@@ -4,7 +4,8 @@ export default {
       "hq":"Spain",
       "icon":require('../images/Abadal-logo.jpg'),
       "overview":"The Abadal was a Spanish car manufactured between 1912 and 1923, named after Francisco Abadal. Francisco Abadal (nicknamed Paco) was a Hispano-Suiza salesman and racing driver in Barcelona. He began this enterprise in 1912, and upon its cessation became an agent of General Motors in Spain. General Motors' plans in 1930 related to a prototype named the Abadal Continental never materialised.",
-      "title":"Abadal"
+      "title":"Abadal",
+       "category":"Other",
    },
    {  
       "founded":"1949",
@@ -13,7 +14,8 @@ export default {
       "icon":require('../images/Abarth-logo.jpg'),
       "overview":"Abarth & C. S.p.A. is a racing car and road car maker founded by Italo-Austrian Carlo Abarth in 1949. Its logo is a shield with a stylized scorpion on a red and yellow background. Abarth & C. S.p.A. is a fully owned subsidiary of FCA Italy S.p.A. (formerly Fiat Group Automobiles S.p.A.), the subsidiary of Fiat Chrysler Automobiles (formerly of Fiat S.p.A.) controlling its European automotive production activities.",
       "title":"Abarth",
-      "website":"www.abarth.it"
+      "website":"www.abarth.it",
+       "category":"ITA",
    },
    {  
       "founded":"1909",
@@ -21,7 +23,8 @@ export default {
       "hq":"Detroit, Michigan, United States",
       "icon":require('../images/Abbott-Detroit-logo.jpg'),
       "overview":"",
-      "title":"Abbott-Detroit"
+      "title":"Abbott-Detroit",
+       "category":"USA",
    },
    {  
       "founded":"1896 - Auto-Abt 1991 - Abt Sportsline GmbH",
@@ -30,7 +33,8 @@ export default {
       "icon":require('../images/ABT-logo.jpg'),
       "overview":"ABT Sportsline is a motor racing and auto tuning company based in Kempten im Allgäu, Germany. ABT mainly deals with Audi and the related primary Volkswagen Group brands—Volkswagen, Škoda, and SEAT—modifying them by using sports-type suspensions, engine power upgrades, lightweight wheels, aerodynamic components and more. It has been active in DTM for more than a decade. After the death of their father Johann in 2003, the company with 170 employees in their headquarters in Kempten was run by the brothers Hans-Jürgen Abt (born 1962, Managing Director) and Christian Abt. Since 2011, Hans-Jürgen Abt has run the company.",
       "title":"ABT",
-      "website":"www.abt-sportsline.de"
+      "website":"www.abt-sportsline.de",
+       "category":"GER",
    },
    {  
       "founded":"1901",
@@ -39,7 +43,8 @@ export default {
       "icon":require('../images/AC-Cars-logo.jpg'),
       "overview":"AC Cars Ltd. formerly known as Auto Carriers Ltd., is a British specialist automobile manufacturer and one of the oldest independent car makers founded in Britain.",
       "title":"AC Cars",
-      "website":"www.ac-automotive.com"
+      "website":"www.ac-automotive.com",
+       "category":"UK",
    },
    {  
       "founded":"March 27, 1986",
@@ -48,7 +53,8 @@ export default {
       "icon":require('../images/Acura-logo.jpg'),
       "overview":"Acura is the luxury vehicle marque of Japanese automaker Honda. The brand was launched in the United States and Canada in March 1986, marketing luxury, performance, and high-performance vehicles. Since its inception, Acura has been a trailblazer in the automotive industry. In the late 1980s, the success of the company's first flagship vehicle, the Legend, inspired fellow Japanese automakers Toyota and Nissan to launch their own luxury brands, Lexus and Infiniti.",
       "title":"Acura",
-      "website":"www.acura.com"
+      "website":"www.acura.com",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1983",
@@ -56,7 +62,8 @@ export default {
       "icon":require('../images/Aixam-logo.jpg'),
       "overview":"Aixam-Mega is a French automobile manufacturer based in Aix-les-Bains, Savoie. It was founded in 1983 to make microcars following the acquisition of Arola. On April 11, 2013, US based Polaris Industries announced that it had acquired Aixam-Mega.",
       "title":"Aixam",
-      "website":"www.aixam.com"
+      "website":"www.aixam.com",
+       "category":"FRA",
    },
    {  
       "founded":"24 June 1910",
@@ -65,7 +72,8 @@ export default {
       "icon":require('../images/Alfa-Romeo-logo.jpg'),
       "overview":"Alfa Romeo Automobiles S.p.A. is an Italian car manufacturer. Founded as A.L.F.A. on June 24, 1910, in Milan, the company has been involved in car racing since 1911. It was owned by Italian state holding company Istituto per la Ricostruzione Industriale between 1932 and 1986, when it became a part of the Fiat group. In February 2007, the Alfa Romeo brand was transformed into the current Alfa Romeo Automobiles S.p.A., a subsidiary of Fiat Group Automobiles, now Fiat Chrysler Automobiles Italy.",
       "title":"Alfa Romeo",
-      "website":"www.alfaromeo.com"
+      "website":"www.alfaromeo.com",
+       "category":"ITA",
    },
    {  
       "founded":"1965",
@@ -74,7 +82,8 @@ export default {
       "icon":require('../images/Alpina-logo.jpg'),
       "overview":"Alpina Burkard Bovensiepen GmbH & Co. KG is an automobile manufacturing company based in Buchloe, in the Ostallgäu district of Bavaria, Germany selling their own cars, based on BMW cars.",
       "title":"Alpina",
-      "website":"www.alpina-automobile.de"
+      "website":"www.alpina-automobile.de",
+       "category":"GER",
    },
    {  
       "founded":"1955",
@@ -83,14 +92,16 @@ export default {
       "icon":require('../images/Alpine-logo.jpg'),
       "overview":"",
       "title":"Alpine",
-      "website":"www.alpinecars.com"
+      "website":"www.alpinecars.com",
+       "category":"FRA",
    },
    {  
       "founded":"1962",
       "hq":"Athens, Greece",
       "icon":require('../images/Alta-logo.jpg'),
       "overview":"Alta was a Greek manufacturer of light and heavier three-wheeler trucks, motorcycles and passenger cars. The truck, featuring a pleasant design and high reliability became one of the most successful vehicles of its kind in Greece.",
-      "title":"Alta"
+      "title":"Alta",
+       "category":"Other",
    },
    {  
       "founded":"1919",
@@ -99,7 +110,8 @@ export default {
       "icon":require('../images/Alvis-logo.jpg'),
       "overview":"Alvis Car and Engineering Company Ltd was a British manufacturing company in Coventry from 1919 to 1967. In addition to automobiles designed for the civilian market, the company also produced racing cars, aircraft engines, armoured cars and other armoured fighting vehicles. Car manufacturing ended after the company became a subsidiary of Rover in 1965, but armoured vehicle manufacture continued. Alvis became part of British Leyland and then in 1982 was sold to United Scientific Holdings, which renamed itself Alvis plc.",
       "title":"Alvis",
-      "website":"www.thealviscarcompany.co.uk"
+      "website":"www.thealviscarcompany.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1954",
@@ -107,7 +119,8 @@ export default {
       "hq":"Southfield, Michigan, United States",
       "icon":require('../images/AMC-logo.jpg'),
       "overview":"American Motors Corporation (AMC) was an American automobile company formed by the 1954 merger of Nash-Kelvinator Corporation and Hudson Motor Car Company. At the time, it was the largest corporate merger in U.S. history. AMC went on to compete with the US Big Three, Ford, General Motors and Chrysler — with its small cars including the Rambler American, Gremlin and Pacer; muscle cars including the Marlin, AMX and Javelin, and early 4-wheel-drive variants including the Concord and Eagle.",
-      "title":"AMC"
+      "title":"AMC",
+       "category":"USA",
    },
    {  
       "founded":"1967",
@@ -116,7 +129,8 @@ export default {
       "icon":require('../images//////AMG-logo.jpg'),
       "overview":"\"Simple A, M and G characters is one of the only signs, which differentiates ordinary Mercedes car models from more aggressive, sports modifications, made by a luxury car tuning giant. Probably, the creators of the brand decided, that there is nothing classier than elegance, when they devised the name and the logo of the future automobile reworking company – AMG. So they called it by the capital letters of their names (Aufrecht and Melcher) and the name of a town, where they constructed first cars, – Grossaspach.\\n\"Occasionally a newer emblem can be found: a circle split into two halves, enclosed into the bordering with the brand name and “Affalterbach” written on it. Affalterbach is a town, where manufacturing facilities are located, and one half with a green tree and a stream takes after its emblem. The other half containing a valve and a spring symbolizes the plant.\\n",
       "title":"/////AMG",
-      "website":"www.mercedes-amg.com"
+      "website":"www.mercedes-amg.com",
+       "category":"GER",
    },
    {  
       "founded":"1999",
@@ -124,7 +138,8 @@ export default {
       "icon":require('../images/Arash-logo.jpg'),
       "overview":"Arash Motor Company is a small sports car manufacturer based in Newmarket, Suffolk, England. It was originally established by Arash Farboud as Farboud Limited in 1999 and changed name in 2006.",
       "title":"Arash",
-      "website":"www.arashcars.com"
+      "website":"www.arashcars.com",
+       "category":"UK",
    },
    {  
       "founded":"1870",
@@ -133,7 +148,8 @@ export default {
       "icon":require('../images/Ariel-logo.jpg'),
       "overview":"Ariel Motor Company Ltd is a low-volume performance motor vehicle manufacturing company in Crewkerne, in Somerset, England. The company manufactures the Ariel Atom, an extremely light, high performance car, powered by a Honda Civic Type-R engine and gearbox.",
       "title":"Ariel",
-      "website":"www.arielmotor.co.uk"
+      "website":"www.arielmotor.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1957",
@@ -141,7 +157,8 @@ export default {
       "icon":require('../images/ARO-logo.jpg'),
       "overview":"ARO (short for Auto Romania) was a Romanian off-road vehicle manufacturer located in Câmpulung-Muscel. The first ARO vehicles were produced in 1957, and the last in 2003. For a short while, Daihatsu-powered AROs were sold in Spain and produced in Portugal under the brands Hisparo and Portaro, respectively. In Italy, Volkswagen-powered AROs were produced by ARO-Ciemme and sold under the ACM brand. Low volume production of ARO vehicles has restarted under the aegis of a Czech company called Auto Max Czech (AMC).",
       "title":"ARO",
-      "website":"www.aro.ro"
+      "website":"www.aro.ro",
+       "category":"Other",
    },
    {  
       "founded":"2008",
@@ -150,7 +167,8 @@ export default {
       "icon":require('../images/Arrinera-logo.jpg'),
       "overview":"\"Arrinera Automotive S.A., is a Polish supercar manufacturer based in Warsaw.\\n",
       "title":"Arrinera",
-      "website":"www.arrinera.com"
+      "website":"www.arrinera.com",
+       "category":"Other",
    },
    {  
       "founded":"2006",
@@ -159,7 +177,8 @@ export default {
       "icon":require('../images/Artega-logo.jpg'),
       "overview":"Artega Automobil GmbH & Co. KG was a German sports car manufacturer based in Delbrück, Germany. Founded by Klaus Dieter Frers in 2006, the company filed for bankruptcy in July 2012.",
       "title":"Artega",
-      "website":"www.artega.de"
+      "website":"www.artega.de",
+       "category":"GER",
    },
    {  
       "founded":"1995",
@@ -168,7 +187,8 @@ export default {
       "icon":require('../images/Ascari-logo.jpg'),
       "overview":"Ascari Cars Ltd. is a British automobile manufacturer that is based in Banbury, England, and founded by Dutch millionaire Klaas Zwart. The company is named after Alberto Ascari (1918–1955) who was the first double Formula One world champion. Ascari also manages a racetrack, Race Resort Ascari.",
       "title":"Ascari",
-      "website":"www.ascari.net"
+      "website":"www.ascari.net",
+       "category":"UK",
    },
    {  
       "founded":"1913",
@@ -177,7 +197,8 @@ export default {
       "icon":require('../images/Aston-Martin-logo.jpg'),
       "overview":"Aston Martin Lagonda Limited is a British manufacturer of luxury sports cars and grand tourers. It was founded in 1913 by Lionel Martin and Robert Bamford. The company has had a chequered financial history, including bankruptcy in the 1970s, but has also enjoyed long periods of success and stability, including under the ownership of David Brown, from 1947 to 1972 and of the Ford Motor Company from 1994 to 2007.",
       "title":"Aston Martin",
-      "website":"www.astonmartin.com"
+      "website":"www.astonmartin.com",
+       "category":"UK",
    },
    {  
       "founded":"1900",
@@ -185,7 +206,8 @@ export default {
       "hq":"Auburn, Indiana, United States",
       "icon":require('../images/Auburn-logo.jpg'),
       "overview":"Auburn was a brand name of American automobiles produced from 1900 through 1937.",
-      "title":"Auburn"
+      "title":"Auburn",
+       "category":"USA",
    },
    {  
       "founded":"July 16, 1909, Zwickau, Germany",
@@ -194,7 +216,8 @@ export default {
       "icon":require('../images/Audi-logo.jpg'),
       "overview":"\"Audi is among the best-selling luxury automobiles in the world. Audi has been a majority owned subsidiary of Volkswagen Group since 1966.\\n\"The company name is based on the surname of the founder, August Horch. “Horch”, meaning “listen” in German, becomes “Audi” when translated into Latin.\\n\"The Audi symbol is four ceiling rings that reflect the four manufacturers of Auto Union. This Audi emblem signs the association of the brand Audi with others: Horch, DKW, Wanderer: the initial ring from at the left side represents Audi, the next represents DKW, the third is Horch, then the fourth ring is Wanderer.\\n",
       "title":"Audi",
-      "website":"www.audi.com"
+      "website":"www.audi.com",
+       "category":"GER, Popular",
    },
    {  
       "founded":"1905",
@@ -202,7 +225,8 @@ export default {
       "hq":"Longbridge, England, United Kingdom",
       "icon":require('../images/Austin-logo.jpg'),
       "overview":"The Austin Motor Company Limited was an English manufacturer of motor vehicles, founded in 1905 by Herbert Austin. In 1952 it was merged with Morris Motors Limited in the new holding company British Motor Corporation (BMC) Limited, keeping its separate identity. The marque Austin was used until 1987.",
-      "title":"Austin"
+      "title":"Austin",
+       "category":"UK",
    },
    {  
       "founded":"1947",
@@ -211,14 +235,16 @@ export default {
       "icon":require('../images/Autobacs-logo.jpg'),
       "overview":"Autobacs Seven Co., Ltd. (株式会社オートバックスセブン Kabushiki-gaisha Ōtobakksu Sebun?) (TYO: 9832) is a retailer of automotive parts and accessories based in Japan with branches primarily in Asia, with stores also located in France.",
       "title":"Autobacs",
-      "website":"www.autobacs.co.jp"
+      "website":"www.autobacs.co.jp",
+       "category":"JPN",
    },
    {  
       "founded":"1955",
       "hq":"Milan, Italy",
       "icon":require('../images/Autobianchi-logo.jpg'),
       "overview":"Autobianchi was an Italian automobile manufacturer, created jointly by Bianchi, Pirelli and Fiat in 1955. Autobianchi was bought by the Fiat group and integrated into the operations of Lancia. The marque survived in Italy until the end of the Y10's production in 1995, but became extinct elsewhere when the model was rebranded as a Lancia in 1989.",
-      "title":"Autobianchi"
+      "title":"Autobianchi",
+       "category":"ITA",
    },
    {  
       "founded":"2009",
@@ -227,7 +253,8 @@ export default {
       "icon":require('../images/BAC-logo.jpg'),
       "overview":"",
       "title":"BAC",
-      "website":"www.bac-mono.com"
+      "website":"www.bac-mono.com",
+       "category":"UK",
    },
    {  
       "founded":"2010",
@@ -235,7 +262,8 @@ export default {
       "icon":require('../images/Baojun-logo.jpg'),
       "overview":"Baojun (simplified Chinese: 宝骏; traditional Chinese: 寳駿; pinyin: Bǎojùn; literally: \"Treasured Horse\") is a Chinese automobile marque owned by a joint venture of General Motors and SAIC Motor, SAIC-GM-Wuling Automobile.",
       "title":"Baojun",
-      "website":"www.autobaojun.com"
+      "website":"www.autobaojun.com",
+       "category":"CHN",
    },
    {  
       "founded":"2010",
@@ -243,7 +271,8 @@ export default {
       "icon":require('../images/BAIC-Motor-logo.jpg'),
       "overview":"BAIC Motor Co., Ltd. is a subsidiary of BAIC which manufactures passenger cars and microvans sold under the Senova (绅宝) and Weiwang (威旺) marques, respectively. Founded in 2010 and based in Beijing, Daimler AG acquired a 12% stake in BAIC Motor in November 2013.",
       "title":"BAIC Motor",
-      "website":"www.baicmotor.com"
+      "website":"www.baicmotor.com",
+       "category":"CHN",
    },
    {  
       "founded":"1919",
@@ -252,14 +281,16 @@ export default {
       "icon":require('../images/Bentley-logo.jpg'),
       "overview":"Bentley Motors Limited is a British company that designs, develops, and manufactures luxury motorcars which are largely hand-built. It is a subsidiary of Volkswagen AG. Now based in Crewe, England, Bentley Motors Limited was founded by W. O. Bentley on 18 January 1919 in Cricklewood, North London. In 1998, Vickers sold it to Volkswagen AG. The sale included the vehicle designs, model nameplates, production and administrative facilities, the Spirit of Ecstasy and Rolls-Royce grille shape trademarks, but not the rights to the Rolls-Royce name or logo which are owned by Rolls-Royce Holdings plc and were licensed to BMW AG.",
       "title":"Bentley",
-      "website":"www.bentleymotors.com"
+      "website":"www.bentleymotors.com",
+       "category":"UK",
    },
    {  
       "founded":"1956",
       "hq":"Biggleswade, England, United Kingdom",
       "icon":require('../images/Berkeley-logo.jpg'),
       "overview":"Berkeley Cars Ltd of Biggleswade, Bedfordshire, England produced economical sporting microcars with motorcycle-derived engines from 322 cc to 692 cc and front wheel drive between 1956 and 1960.",
-      "title":"Berkeley"
+      "title":"Berkeley",
+       "category":"UK",
    },
    {  
       "founded":"1899",
@@ -267,7 +298,8 @@ export default {
       "hq":"Vénissieux, France",
       "icon":require('../images/Berliet-logo.jpg'),
       "overview":"Berliet was a French manufacturer of automobiles, buses, trucks and military vehicles among other vehicles based in Vénissieux, outside of Lyon, France. Founded in 1899, and apart from a five-year period from 1944 to 1949 when it was put into 'administration sequestre' it was in private ownership until 1967 when it then became part of Citroën, and subsequently acquired by Renault in 1974 and merged with Saviem into a new Renault Trucks company in 1978. The Berliet marque was phased out by 1980.",
-      "title":"Berliet"
+      "title":"Berliet",
+       "category":"FRA",
    },
    {  
       "founded":"1912",
@@ -276,7 +308,8 @@ export default {
       "icon":require('../images/Bertone-logo.jpg'),
       "overview":"Gruppo Bertone, commonly known simply as Bertone, was an Italian automobile company, which specialized in car styling, coachbuilding and manufacturing. Bertone styling is distinctive, with most cars having a strong \"family resemblance\" even if they are badged by different manufacturers. Bertone has styled cars for Abarth, Alfa Romeo, Aston Martin, Citroën, Ferrari, Fiat, Iso, Lancia, Lamborghini, Mercedes Benz, Opel and Volvo, among others. In addition, the Bertone studio was responsible for two of the later designs of the Lambretta motorscooter. In the late 1980s, Bertone styled the K20 motorcycle helmet for Swiss bicycle and motorcycle helmet manufacturer Kiwi.",
       "title":"Bertone",
-      "website":"www.bertone.it"
+      "website":"www.bertone.it",
+       "category":"ITA",
    },
    {  
       "founded":"1964",
@@ -284,7 +317,8 @@ export default {
       "hq":"Livorno, Italy",
       "icon":require('../images/Bizzarrini-logo.jpg'),
       "overview":"Bizzarrini S.p.A. was an Italian automotive manufacturer in the 1960s founded by former Alfa Romeo, Ferrari and ISO engineer, Giotto Bizzarrini. Originally Prototipi Bizzarrini s.r.l., the name was changed to Bizzarrini S.p.A. in 1966.",
-      "title":"Bizzarrini"
+      "title":"Bizzarrini",
+       "category":"ITA",
    },
    {  
       "founded":"7 March 1916",
@@ -293,7 +327,8 @@ export default {
       "icon":require('../images/BMW-logo.jpg'),
       "overview":"\"BMW (Bavarian Motor Works) is a German automobile company founded in 1916, it also owns and produces Mini cars and Rolls-Royce Motor Cars. BMW is one of three best-selling luxury automakers in the world, along with Audi and Mercedes-Benz. The BMW logo contains a think black circle which is bordered by a smooth silver outline holding company’s name in a prominent position. The core of the circle is broke up into four quadrants with national colors of Bavaria – blue and white.\\n",
       "title":"BMW",
-      "website":"www.bmw.com"
+      "website":"www.bmw.com",
+       "category":"GER, Popular",
    },
    {  
       "founded":"1919",
@@ -302,7 +337,8 @@ export default {
       "icon":require('../images/Borgward-logo.jpg'),
       "overview":"",
       "title":"Borgward",
-      "website":"www.borgward.com"
+      "website":"www.borgward.com",
+       "category":"GER",
    },
    {  
       "founded":"1977",
@@ -311,7 +347,8 @@ export default {
       "icon":require('../images/Brabus-logo.jpg'),
       "overview":"Brabus, founded 1977 in Bottrop (Ruhr Area), Germany, is a high-performance aftermarket tuning company which specializes in Mercedes-Benz, Smart, and Maybach vehicles. Klaus Brackman and Bodo Buschmann established the company in 1977, the name deriving from the combined first three letters of their last names. Brabus became the largest Mercedes tuner, other than Mercedes-AMG which became a DaimlerChrysler affiliate in the 1990s.",
       "title":"Brabus",
-      "website":"www.brabus.com"
+      "website":"www.brabus.com",
+       "category":"GER",
    },
    {  
       "founded":"2002",
@@ -320,7 +357,8 @@ export default {
       "icon":require('../images/Brammo-logo.jpg'),
       "overview":"",
       "title":"Brammo",
-      "website":"www.brammo.com"
+      "website":"www.brammo.com",
+       "category":"USA",
    },
    {  
       "founded":"2002",
@@ -328,7 +366,8 @@ export default {
       "icon":require('../images/Brilliance-logo.jpg'),
       "overview":"In 2003, BMW and Brilliance signed a deal for the production of BMW-branded sedans in China. Its models are, alongside FAW Group Audis and Beijing Benz Mercedes Benzes, some of the only Western luxury cars to have gained popularity in the Chinese market.",
       "title":"Brilliance",
-      "website":"www.brillianceauto.com"
+      "website":"www.brillianceauto.com",
+       "category":"CHN",
    },
    {  
       "founded":"1945",
@@ -336,7 +375,8 @@ export default {
       "icon":require('../images/Bristol-logo.jpg'),
       "overview":"Bristol Cars is a manufacturer of hand-built luxury cars headquartered on Kensington High Street, London, England. The company suspended manufacturing in March 2011, when administrators were appointed and 22 staff were made redundant. In April 2011, the company was purchased by Kamkorp.",
       "title":"Bristol",
-      "website":"www.bristolcars.co.uk"
+      "website":"www.bristolcars.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1986",
@@ -354,7 +394,8 @@ export default {
       "icon":require('../images/Bugatti-logo.jpg'),
       "overview":"\"Bugatti logo is a three-colored oval-shaped figure. Sixty red dots that symbolize either pearls or safety wires are embedded into the narrow white bordering. The word ‘Bugatti’, carved of white letters with black shades, lies on the red font in the middle of the logo. The emblem is completed with a stylish EB trademark above the word, the initials of the great Ettore Bugatti, founder of the company.\\n\"Ettore Bugatti’s father was a professional jewelry designer and artist. His artistic talent was crucial in shaping the unique and iconic designs of the marque’s cars and also in their corporate identity. There were no gaskets used in the Buggati cars so the safety wires just appeared like lace patterns. This might be the reason there are red dots in the Bugatti logo. Another theory suggests that the senior Bugatti saw his son’s automobiles as fine jewel pieces.\\n",
       "title":"Bugatti",
-      "website":"www.bugatti.com"
+      "website":"www.bugatti.com",
+       "category":"FRA",
    },
    {  
       "founded":"1899 (Buick Auto-Vim and Power Company) 1903 (Buick Motor Company)",      
@@ -363,7 +404,8 @@ export default {
       "icon":require('../images/Buick-logo.jpg'),
       "overview":"Buick, formally the Buick Motor Division, is an upscale automobile brand of the American manufacturer General Motors (GM). For much of its existence in the North American market, Buick has been marketed as a premium automobile brand, selling luxury vehicles positioned above GM's mainstream brands, e.g. Chevrolet, while below the flagship luxury Cadillac division.",
       "title":"Buick",
-      "website":"www.buick.com"
+      "website":"www.buick.com",
+       "category":"USA",
    },
    {  
       "founded":"1995",
@@ -372,7 +414,8 @@ export default {
       "icon":require('../images/BYD-logo.jpg'),
       "overview":"BYD Co Ltd is a Chinese manufacturer of automobiles and rechargeable batteries with its corporate headquarters in Shenzhen. It has two major subsidiaries, BYD Automobile and BYD Electronic.",
       "title":"BYD",
-      "website":"www.byd.com"
+      "website":"www.byd.com",
+       "category":"CHN",
    },
    {  
       "founded":"1902, Detroit, Michigan",
@@ -381,7 +424,8 @@ export default {
       "icon":require('../images/Cadillac-logo.jpg'),
       "overview":"\"Cadillac was founded in 1902 by Henry M. Leland. Cadillac is one of the oldest automobile brands in the world, and is the second oldest American automobile brand following fellow Buick. General Motors purchased Cadillac in 1909.\\n\"Speaking about the meaning of the logo, it is represented as montage of authentic heraldry which consists of several pieces and bits. Antoine decided to put them all together following his own goal. Elements which are used in the logo are considered to be martin heraldic adaptation. For many decades it was not changed and modified. In 2014, All Cadillac’s new cars will have a new logo.\\n",
       "title":"Cadillac",
-      "website":"www.cadillac.com"
+      "website":"www.cadillac.com",
+       "category":"USA",
    },
    {  
       "founded":"1989",
@@ -389,7 +433,8 @@ export default {
       "icon":require('../images/Carlsson-logo.jpg'),
       "overview":"\"Carlsson is a German car tuning manufacturer specialising in Mercedes-Benz cars. The Carlsson tuning house was founded by brothers Rolf and Andreas Hartge in 1989.\\n",
       "title":"Carlsson",
-      "website":"www.carlsson.de"
+      "website":"www.carlsson.de",
+       "category":"GER",
    },
    {  
       "founded":"1973",
@@ -398,7 +443,8 @@ export default {
       "icon":require('../images/Caterham-logo.jpg'),
       "overview":"Caterham Cars is a British manufacturer of specialist lightweight sports cars established in Caterham, Surrey, with their headquarters in Crawley, Sussex. Their current model, the Caterham 7 (or Seven), originally launched in 1973, is a direct evolution of the Series 3 Lotus Seven designed by Colin Chapman.",
       "title":"Caterham",
-      "website":"www.caterhamcars.com"
+      "website":"www.caterhamcars.com",
+       "category":"UK",
    },
    {  
       "founded":"1862",
@@ -406,14 +452,16 @@ export default {
       "icon":require('../images/Changan-logo.jpg'),
       "overview":"Changan Automobile (Group) Co Ltd is a Chinese automobile manufacturer headquartered in Chongqing, China, and a state-owned enterprise. Foreign automakers that have joined joint ventures with Chang'an include Ford, Mazda, Suzuki, and PSA Peugeot Citroen.",
       "title":"Changan",
-      "website":"www.changan.com.cn"
+      "website":"www.changan.com.cn",
+       "category":"CHN",
    },
    {  
       "founded":"1950",
       "hq":"Changsha, Hunan, China",
       "icon":require('../images/Changfeng-logo.jpg'),
       "overview":"",
-      "title":"Changfeng"
+      "title":"Changfeng",
+       "category":"CHN",
    },
    {  
       "founded":"1997",
@@ -421,7 +469,8 @@ export default {
       "icon":require('../images/Chery-logo.jpg'),
       "overview":"Chery Automobile Co., Ltd., trading as Chery and sometimes known by the pinyin transcription of its Chinese name, Qirui (奇瑞), is a Chinese automobile manufacturer headquartered in Wuhu, Anhui Province, China. It was founded by the Government of China in 1997 and is a state-owned corporation. Chery's principal products are passenger cars, minivans, and SUVs; it sells passenger cars under the Chery marque and commercial vehicles under the Karry brand. Chery is the tenth-largest China-based automaker measured by 2012 output (around 590,000 units).",
       "title":"Chery",
-      "website":"www.chery.cn"
+      "website":"www.chery.cn",
+       "category":"CHN",
    },
    {  
       "founded":"1911",
@@ -430,7 +479,8 @@ export default {
       "icon":require('../images/Chevrolet-logo.jpg'),
       "overview":"\"Chevrolet has one of the most recognizable logos in the world and it has changed little through the history. It is often described as a cross and is known in North America as a bowtie. However, despite featuring two intersecting patterns, the logo has little to do with both cross and bowtie. The horizontal parallelepiped is overlapped by the square to form a cross-like figure. It is painted yellow and gold and is easily associated with one of the biggest car brands.\\n\"Sometimes referred to as the “Chevy bowtie”, the bow is perpendicularly placed over the company’s name. The Chevy logo is universally popular for its nonpareil creativity, simplicity and clarity. It has a massive influence over the automobile industry.\\n\"It was first introduced by Mr. Durant in 1913. While some credit Mr. Louis as its sole creator, who incorporated the Swiss cross in his design, the others suggest that it was actually Durant who designed the Chevy logo, taking inspiration from a charming wallpaper which he had seen in a French hotel.\\n",
       "title":"Chevrolet",
-      "website":"www.chevrolet.com"
+      "website":"www.chevrolet.com",
+       "category":"USA",
    },
    {  
       "founded":"FCA US LLC (December 16, 2014) Chrysler Group LLC (June 10, 2009) Chrysler Corporation (June 6, 1925)",
@@ -439,7 +489,8 @@ export default {
       "icon":require('../images/Chrysler-logo.jpg'),
       "overview":"\"When Cerberus Capital Management became involved in the Chrysler Group, the traditional pentastar was given a new life as the official corporate identity.\\n\"The “seal” logo was revived in the late 1990s following the “rebirth” of Chrysler. Initially implemented as a circle, the logo was eventually placed in “wings”.\\n",
       "title":"Chrysler",
-      "website":"www.fcausllc.com www.chrysler.com"
+      "website":"www.fcausllc.com www.chrysler.com",
+       "category":"USA",
    },
    {  
       "founded":"1946",
@@ -447,7 +498,8 @@ export default {
       "hq":"Turin, Italy",
       "icon":require('../images/Cisitalia-logo.jpg'),
       "overview":"Cisitalia was an Italian sports and racing car brand. The name \"Cisitalia\" derives from \"Compagnia Industriale Sportiva Italia\", a business conglomerate founded in Turin in 1946 and controlled by the wealthy industrialist and sportsman Piero Dusio. The Cisitalia 202 GT of 1946 is well known in the world as a \"rolling sculpture\".",
-      "title":"Cisitalia"
+      "title":"Cisitalia",
+       "category":"ITA",
    },
    {  
       "founded":"1919",
@@ -456,7 +508,8 @@ export default {
       "icon":require('../images/Citroen-logo.jpg'),
       "overview":"\"The famous Citroen logo features a stylized image of double helical gears, paying tribute to Andre Citroen’s engineering background and early gear business. It also looks like a double ‘V’ sign, turned upside down, or a double arrow facing upwards. The logo is completed with a red Citroen inscription below it.\\n\"The Citroen logo has undergone several modifications throughout the years. Its earliest form featured yellow and blue colors. The present red and white color scheme was however introduced during the 1980s.\\n",
       "title":"Citroën",
-      "website":"www.citroen.com"
+      "website":"www.citroen.com",
+       "category":"FRA",
    },
    {  
       "founded":"1909",
@@ -464,7 +517,8 @@ export default {
       "hq":"Indianapolis, Indiana, United States",
       "icon":require('../images/Cole-logo.jpg'),
       "overview":"The Cole Motor Car Company was an early automobile maker based in Indianapolis, Indiana. Cole automobiles were built from 1908 until 1925. They were quality-built luxury cars. The make is a pioneer of the V-8 engine.",
-      "title":"Cole"
+      "title":"Cole",
+       "category":"USA",
    },
    {  
       "founded":"1901",
@@ -472,7 +526,8 @@ export default {
       "hq":"Levallois-Perret, France",
       "icon":require('../images/Corre-La-Licorne-logo.jpg'),
       "overview":"",
-      "title":"Corre La Licorne"
+      "title":"Corre La Licorne",
+       "category":"FRA",
    },
    {  
       "icon":require('../images/Corvette-logo.jpg'),
@@ -502,7 +557,8 @@ export default {
       "icon":require('../images/Daihatsu-logo.jpg'),
       "overview":"\"The name \"Daihatsu\" is a combination of the first kanji for Ōsaka and the first of the word \"engine manufacture\". In the new combination the reading of the \"大\" is changed from \"ō\" to \"dai\", giving \"dai hatsu\".\\n",
       "title":"Daihatsu",
-      "website":"www.daihatsu.com"
+      "website":"www.daihatsu.com",
+       "category":"JPN",
    },
    {  
       "hq":"Riga, Latvia",
@@ -517,7 +573,8 @@ export default {
       "icon":require('../images/Datsun-logo.jpg'),
       "overview":"\"The \"classic\" Datsun logo, based on the Flag of Japan and Japan's nickname as the \"Land of the Rising Sun\". After the Nissan rebrand, the logo remained the same, with \"Datsun\" replaced by \"Nissan\".\\n",
       "title":"Datsun",
-      "website":"www.datsun.com"
+      "website":"www.datsun.com",
+       "category":"JPN",
    },
    {  
       "founded":"1905",
@@ -525,7 +582,8 @@ export default {
       "hq":"Levallois-Perret, France",
       "icon":require('../images/Delage-logo.jpg'),
       "overview":"Delage was a French luxury automobile and racecar company founded in 1905 by Louis Delage in Levallois-Perret near Paris; it was acquired by Delahaye in 1935 and ceased operation in 1953.",
-      "title":"Delage"
+      "title":"Delage",
+       "category":"FRA",
    },
    {  
       "founded":"1975 (Original company) 2016 (Second company)",
@@ -534,7 +592,8 @@ export default {
       "icon":require('../images/DMC-logo.jpg'),
       "overview":"The Delorean Motor Company (DMC) is an American automobile manufacturer formed by automobile industry executive John DeLorean in 1975. It is remembered for the one model it produced — the distinctive stainless steel DeLorean DMC-12 sports car featuring gull-wing doors—and for its brief and turbulent history, ending in receivership and bankruptcy in 1982. In 1995, Liverpool-born mechanic Stephen Wynne started a separate company using the \"DeLorean Motor Company\" name and shortly thereafter acquired the remaining parts inventory and the stylized \"DMC\" logo trademark of DeLorean Motor Company. The current DeLorean Motor Company located near Houston is not, and has never been, associated with the original company but supports owners of DeLorean cars. DMC (Texas), as they are known, has an additional five authorized, franchised dealers in Bonita Springs, Florida; Crystal Lake, Illinois; Huntington Beach, California; Bellevue, Washington and Hem, Netherlands.",
       "title":"DMC",
-      "website":"www.delorean.com"
+      "website":"www.delorean.com",
+       "category":"USA",
    },
    {  
       "founded":"1959",
@@ -542,7 +601,8 @@ export default {
       "hq":"Modena, Italy",
       "icon":require('../images/De-Tomaso-logo.jpg'),
       "overview":"",
-      "title":"De Tomaso"
+      "title":"De Tomaso",
+       "category":"ITA",
    },
    {  
       "founded":"1907–1939, revived in 2008",
@@ -550,7 +610,8 @@ export default {
       "icon":require('../images/Detroit-Electric-logo.jpg'),
       "overview":"",
       "title":"Detroit Electric",
-      "website":"www.detroit-electric-group.com"
+      "website":"www.detroit-electric-group.com",
+       "category":"USA",
    },
    {  
       "founded":"1905",
@@ -558,7 +619,8 @@ export default {
       "hq":"Turin, Italy",
       "icon":require('../images/Diatto-logo.jpg'),
       "overview":"In 1905 the grandsons of the founder, Vittorio and Pietro Diatto, believed that motor-vehicle production represented the future for the 'carriage market'. On 12 April 1905, they founded the Società Diatto-A. Clement in partnership with the French company Clément-Bayard, owned by Adolphe Clément-Bayard of Paris. Diatto-Clément had a workforce of 500 (Note: Fiat had 776) and produced cars with 4 and 6 cylinder engines.",
-      "title":"Diatto"
+      "title":"Diatto",
+       "category":"ITA",
    },
    {  
       "founded":"1916",
@@ -566,7 +628,8 @@ export default {
       "hq":"Zschopau, Germany (1906-1932) Chemnitz (1932-1949) Ingolstadt (1949-1969)",
       "icon":require('../images/DKW-logo.jpg'),
       "overview":"DKW is a German car and motorcycle marque. The company and brand is one of the ancestor companies of the modern day Audi company as one of the four companies that formed Auto-Union.",
-      "title":"DKW"
+      "title":"DKW",
+       "category":"GER",
    },
    {  
       "founded":"1900",
@@ -575,7 +638,8 @@ export default {
       "icon":require('../images/Dodge-logo.jpg'),
       "overview":"\"Since 2011 the ram’s head has been the exclusive logo of Ram Trucks, while Dodge introduced the all-new logo, a stylish silver Dodge inscription matched with two inclined red stripes at the right side.\\n",
       "title":"Dodge",
-      "website":"www.dodge.com"
+      "website":"www.dodge.com",
+       "category":"USA",
    },
    {  
       "founded":"1969",
@@ -610,7 +674,8 @@ export default {
       "icon":require('../images/EDAG-logo.jpg'),
       "overview":"EDAG Engineering GmbH is a German company founded 1969 in Groß-Zimmern by Horst Eckard as eckard design. The headquarters are located in Wiesbaden, Germany. The company has more than 4000 employees in 32 offices all over the world. It serves for new product development, production facility development, production system, aviation and spaceflight, tool development and subconstruction for automotive industry.",
       "title":"EDAG",
-      "website":"www.edag.de"
+      "website":"www.edag.de",
+       "category":"GER",
    },
    {  
       "founded":"1948",
@@ -759,7 +824,8 @@ export default {
       "icon":require('../images/Geely-logo.jpg'),
       "overview":"",
       "title":"Geely",
-      "website":"www.geely.com"
+      "website":"www.geely.com",
+       "category": "China"
    },
    {  
       "founded":"1908",
@@ -768,7 +834,8 @@ export default {
       "icon":require('../images/General-Motors-logo.jpg'),
       "overview":"",
       "title":"General Motors",
-      "website":"www.gm.com"
+      "website":"www.gm.com",
+       "category":"USA",
    },
    {  
       "founded":"2015",
@@ -809,7 +876,8 @@ export default {
       "icon":require('../images/Ginetta-logo.jpg'),
       "overview":"",
       "title":"Ginetta",
-      "website":"www.ginetta.com"
+      "website":"www.ginetta.com",
+       "category":"UK",
    },
    {  
       "founded":"1911",
@@ -818,7 +886,8 @@ export default {
       "icon":require('../images/GMC-logo.jpg'),
       "overview":"\"The GMC emblem has always been one the most recognizable logos in North America and has always incorporated the three letters forming the company’s name. Basically, it doesn’t carry anything but the G, M and C letters, painted red and decorated with silver borders.\\n",
       "title":"GMC",
-      "website":"www.gmc.com"
+      "website":"www.gmc.com",
+       "category":"USA",
    },
    {  
       "founded":"2003",
@@ -826,7 +895,8 @@ export default {
       "icon":require('../images/Gonow-logo.jpg'),
       "overview":"Gonow is a Chinese manufacturer of automobiles, commercial vehicles and SUV's headquartered in Taizhou, Zhejiang and a subsidiary of GAC Group. It markets its products under the brand name GAC Gonow in China and as Gonow in other markets.",
       "title":"Gonow",
-      "website":"www.gonowauto.com"
+      "website":"www.gonowauto.com",
+       "category":"CHN",
    },
    {  
       "founded":"1984",
@@ -834,13 +904,15 @@ export default {
       "icon":require('../images/Great-Wall-logo.jpg'),
       "overview":"Great Wall Motors Company Limited is a Chinese automobile manufacturer formed in 1984. The company is named after the Great Wall of China. As of 2010, it is China's largest sport utility vehicle (SUV) producer. Some models use the Haval name eschewing Great Wall badging.",
       "title":"Great Wall",
-      "website":"www.gwm.com.cn"
+      "website":"www.gwm.com.cn",
+       "category":"CHN",
    },
    {  
       "icon":require('../images/GT-R-logo.jpg'),
       "overview":"The Nissan GT-R is a handbuilt 2-door 2+2 high performance vehicle produced by Nissan unveiled in 2007. It is the successor to the Nissan Skyline GT-R although no longer part of the Skyline range itself.",
       "title":"GT-R",
-      "website":"www.nissanusa.com/sportscars/gt-r"
+      "website":"www.nissanusa.com/sportscars/gt-r",
+       "category":"JPN",
    },
    {  
       "founded":"2004",
@@ -849,14 +921,16 @@ export default {
       "icon":require('../images/Gumpert-logo.jpg'),
       "overview":"Gumpert Sportwagenmanufaktur GmbH was founded by former Audi Director Roland Gumpert in 2004. Its car manufacturing company is based in Altenburg, Germany. Gumpert’s successful creation the Apollo sport was features in UK’s Top Gear show on July 2008. It also proved its fantastic speed after it broke the record of Bugatti Veyron and Pagani Zonda on Top Gear’s Power Lap Board with a lap time of time of 1.17.1. The Ferrari FXX later broke the record, but it was not recognized because Ferrari did not meet standards for legal street cars.",
       "title":"Gumpert",
-      "website":"www.apollo-automobil.com"
+      "website":"www.apollo-automobil.com",
+       "category":"GER",
    },
    {  
       "founded":"1980",
       "hq":"Harbin, Heilongjiang, China",
       "icon":require('../images/Hafei-logo.jpg'),
       "overview":"",
-      "title":"Hafei"
+      "title":"Hafei",
+       "category":"CHN"
    },
    {  
       "founded":"1992",
@@ -864,7 +938,8 @@ export default {
       "icon":require('../images/Haima-logo.jpg'),
       "overview":"The company was founded in January 1992 as Hainan Mazda Motor, a joint venture between the Hainan provincial government and Mazda to produce Mazda models for sale in China. The joint venture arrangement lasted until 2006, when Mazda's share of Hainan Mazda was acquired by FAW Group, and the company became a subsidiary of FAW. While Haima retained the right to make and sell older Mazda models as well as use Mazda technology to underpin self-designed products, it was prohibited from using the Mazda marque. This doesn't necessarily mean Haima has completely severed ties to its erstwhile partner, as technology transfers may continue.",
       "title":"Haima",
-      "website":"www.en.haima.com"
+      "website":"www.en.haima.com",
+       "category":"CHN"
    },
    {  
       "founded":"2000",
@@ -872,7 +947,8 @@ export default {
       "icon":require('../images/Hawtai-logo.jpg'),
       "overview":"",
       "title":"Hawtai",
-      "website":"www.hawtaimotor.com"
+      "website":"www.hawtaimotor.com",
+       "category":"CHN"
    },
    {  
       "founded":"1991",
@@ -881,7 +957,8 @@ export default {
       "icon":require('../images/Hennessey-logo.jpg'),
       "overview":"Hennessey Performance Engineering is an American tuning house specializing in modifying sports and super cars from several brands like Ferrari, Porsche, McLaren, Chevrolet, Dodge, Cadillac, Lotus, Jeep, Ford, GMC, Lincoln and Lexus. Established in 1991 by John Hennessey, their main facility is located west of Houston, Texas. This firm focuses on mechanical component modification for creating high-powered cars. Besides performance automobiles, they also tune sport utility vehicles such as Ford Raptors and Jeep Cherokees. They also work on luxury cars like Bentleys and muscle cars like Dodge Charger and Challenger.",
       "title":"Hennessey",
-      "website":"www.hennesseyperformance.com"
+      "website":"www.hennesseyperformance.com",
+       "category":"USA",
    },
    {  
       "founded":"1907",
@@ -889,7 +966,8 @@ export default {
       "hq":"Ryton-on-Dunsmore, England, United Kingdom",
       "icon":require('../images/Hillman-logo.jpg'),
       "overview":"Hillman is a British automobile marque created by the Hillman Motor Car Company, founded in 1907. The company was based in Ryton-on-Dunsmore, near Coventry, England.",
-      "title":"Hillman"
+      "title":"Hillman",
+       "category":"UK",
    },
    {  
       "founded":"1942",
@@ -897,7 +975,8 @@ export default {
       "icon":require('../images/Hino-logo.jpg'),
       "overview":"",
       "title":"Hino",
-      "website":"www.hino.com"
+      "website":"www.hino.com",
+       "category":"JPN",
    },
    {  
       "founded":"1904",
@@ -922,7 +1001,8 @@ export default {
       "icon":require('../images/Holden-logo.jpg'),
       "overview":"GM Holden Ltd, generally known as Holden, is an Australian automobile manufacturer that operates in Australia and is headquartered in Port Melbourne, Victoria. The company was founded in 1856 as a saddlery manufacturer in South Australia. Holden is responsible for GM vehicle operations in Australia, and on their behalf, held partial ownership of GM Daewoo in South Korea between 2002 and 2009. Holden has offered a broad range of locally produced vehicles, supplemented by imported GM models. Holden has offered the following badge engineered models in sharing arrangements: Chevrolet, Isuzu, Nissan, Opel, Suzuki, Toyota and Vauxhall Motors.",
       "title":"Holden",
-      "website":"www.holden.com.au"
+      "website":"www.holden.com.au",
+       "category":"Other",
    },
    {  
       "founded":"1990",
@@ -930,7 +1010,8 @@ export default {
       "hq":"Lohéac, Ille-et-Vilaine, France",
       "icon":require('../images/Hommell-logo.jpg'),
       "overview":"Hommell is a French Automobile manufacturer, started in 1990 by Michel Hommell, a former racing driver and the owner of Échappement, a French car magazine. The company is based in Lohéac, near Rennes, Brittany. A prototype of the kind of sports car he would like to be produced was shown at the 1990 Paris Salon, where it was well received, encouraging him to go ahead with a production version.",
-      "title":"Hommell"
+      "title":"Hommell",
+       "category":"FRA",
    },
    {  
       "founded":"1948",
@@ -939,7 +1020,8 @@ export default {
       "icon":require('../images/Honda-logo.jpg'),
       "overview":"Honda became the second-largest Japanese automobile manufacturer in 2001. Honda was the eighth largest automobile manufacturer in the world behind General Motors, Volkswagen Group, Toyota, Hyundai Motor Group, Ford, Nissan, and PSA Peugeot Citroën in 2011. Honda was the first Japanese automobile manufacturer to release a dedicated luxury brand, Acura, in 1986.",
       "title":"Honda",
-      "website":"www.honda.com"
+      "website":"www.honda.com",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1904",
@@ -947,7 +1029,8 @@ export default {
       "hq":"Zwickau, Saxony, Germany",
       "icon":require('../images/Horch-logo.jpg'),
       "overview":"Horch was a car brand manufactured in Germany by August Horch & Cie, at the beginning of the 20th century. It is the direct ancestor of the present day Audi company, which in turn came out of Auto Union, formed in 1932 when Horch merged with DKW, Wanderer and the historic Audi enterprise which August Horch founded in 1910.",
-      "title":"Horch"
+      "title":"Horch",
+       "category":"GER",
    },
    {  
       "founded":"1909",
@@ -955,7 +1038,8 @@ export default {
       "hq":"Detroit, Michigan, United States",
       "icon":require('../images/Hudson-logo.jpg'),
       "overview":"The name \"Hudson\" came from Joseph L. Hudson, a Detroit department store entrepreneur and founder of Hudson's department store, who provided the necessary capital and gave permission for the company to be named after him. A total of eight Detroit businessmen formed the company on February 20, 1909, to produce an automobile which would sell for less than US$1,000 (equivalent to approximately $26,656 in today's funds). One of the chief \"car men\" and organizer of the company was Roy D. Chapin, Sr., a young executive who had worked with Ransom E. Olds. (Chapin's son, Roy Jr., would later be president of Hudson-Nash descendant American Motors Corp. in the 1960s). The company quickly started production, with the first car driven out of a small factory in Detroit on July 3, 1909 at Mack Avenue and Beaufait Street, occupying the old Aerocar factory. The Hudson Motor Car Company made Hudson and other brand automobiles in Detroit, Michigan, from 1909 to 1954. In 1954, Hudson merged with Nash-Kelvinator Corporation to form American Motors (AMC). The Hudson name was continued through the 1957 model year, after which it was discontinued.",
-      "title":"Hudson"
+      "title":"Hudson",
+       "category":"USA",
    },
    {  
       "founded":"1992",
@@ -963,14 +1047,16 @@ export default {
       "icon":require('../images/Hummer-logo.jpg'),
       "overview":"Hummer was a brand of trucks and SUVs, first marketed in 1992 when AM General began selling a civilian version of the M998 Humvee. In 1998, General Motors (GM) purchased the brand name and marketed three vehicles: the original Hummer H1, based on the military Humvee, as well as the H2 and H3 models that were based on smaller, civilian-market GM platforms.",
       "title":"Hummer",
-      "website":"www.hummer.com"
+      "website":"www.hummer.com",
+       "category":"USA",
    },
    {  
       "founded":"1909",
       "hq":"Detroit, Michigan, United States",
       "icon":require('../images/Hupmobile-logo.jpg'),
       "overview":"Hupmobile was an automobile built from 1909 through 1940 by the Hupp Motor Car Company, which was located at 345 Bellevue Avenue in Detroit, Michigan. Its first car, the Model 20, was introduced to the public at the Detroit Auto Show in February 1909. The company initially produced 500 vehicles.",
-      "title":"Hupmobile"
+      "title":"Hupmobile",
+       "category":"USA",
    },
    {  
       "founded":"1967",
@@ -988,7 +1074,8 @@ export default {
       "icon":require('../images/Infiniti-logo.jpg'),
       "overview":"Infiniti is the luxury vehicle division of Japanese automaker Nissan. Infiniti officially started selling vehicles on November 8, 1989 in North America. The brand was created around the same time as Japanese rivals Toyota and Honda developed their Lexus and Acura premium brands.",
       "title":"Infiniti",
-      "website":"www.infiniti.com"
+      "website":"www.infiniti.com",
+       "category":"JPN, Popular",
    },
    {  
       "founded":"1959",
@@ -997,7 +1084,8 @@ export default {
       "icon":require('../images/Intermeccanica-logo.jpg'),
       "overview":"Construzione Automobili Intermeccanica (Torino, 1959) is an automobile manufacturer, founded by Frank Reisner initially based in Italy but subsequently moving to Canada. It is currently headed by Frank's son, Henry Reisner.",
       "title":"Intermeccanica",
-      "website":"www.intermeccanica.com"
+      "website":"www.intermeccanica.com",
+       "category":"ITA",
    },
    {  
       "founded":"1969",
@@ -1006,7 +1094,8 @@ export default {
       "icon":require('../images/Isdera-logo.jpg'),
       "overview":"",
       "title":"Isdera",
-      "website":"www.isdera.de"
+      "website":"www.isdera.de",
+       "category":"GER",
    },
    {  
       "founded":"1953",
@@ -1014,7 +1103,8 @@ export default {
       "hq":"Bresso, Italy",
       "icon":require('../images/Iso-Rivolta-logo.jpg'),
       "overview":"Iso was an automobile and motorcycle maker, the product of Iso Autoveicoli S.p.A of Italy. The company was predominantly active from the late 1940s through the early 1970s. Iso are known for the iconic Isetta bubble car of the 1950s, and for a number of powerful performance cars in the 1960s and early 1970s.",
-      "title":"Iso Rivolta"
+      "title":"Iso Rivolta",
+       "category":"ITA",
    },
    {  
       "founded":"1934",
@@ -1023,7 +1113,8 @@ export default {
       "icon":require('../images/Isuzu-logo.jpg'),
       "overview":"In 2009, Isuzu had produced over 21 million diesel engines, which can be found in vehicles all over the world. Isuzu diesel engines are used by dozens of manufacturers, to include Ford Motor Company and Renault-Nissan Alliance.",
       "title":"Isuzu",
-      "website":"www.isuzu.com"
+      "website":"www.isuzu.com",
+       "category":"JPN",
    },
    {  
       "founded":"1975",
@@ -1031,7 +1122,8 @@ export default {
       "icon":require('../images/Iveco-logo.jpg'),
       "overview":"Iveco, an acronym for Industrial Vehicles Corporation, is an Italian industrial vehicle manufacturing company based in Turin, Italy, and entirely controlled by CNH Industrial Group. It designs and builds light, medium and heavy commercial vehicles, quarry/construction site vehicles, city and intercity buses and special vehicles for applications such as firefighting, off-road missions, the military and civil defence.",
       "title":"Iveco",
-      "website":"www.iveco.com"
+      "website":"www.iveco.com",
+       "category":"ITA",
    },
    {  
       "founded":"1922",
@@ -1040,7 +1132,8 @@ export default {
       "icon":require('../images/Jaguar-logo.jpg'),
       "overview":"\"Jaguar is a British car manufacturer founded in 1922, is now a division of Jaguar Land Rover owned by Tata Motors, which purchased it from Ford in 2008.\\n\"The earliest version of the Jaguar logo was introduced in 1935, but the current “leaping jaguar” logo was unveiled years later in 1945. A large white spotted feline, Jaguar has been a traditional symbol of speed, strength and power.\\n\"The latest Jaguar logo, updated in 2012, is designed in silver, metallic grey and black colors. As long as it is a tridimensional figure, gradient colors are used to highlight the shades that make the jaguar posture look rich and animate. The most frequent colors used in the Jaguar logo are black, golden and metallic grey. While the black color embodies elegance, integrity and high performance, the metallic grey and silver colors are a perfect illustration of sophistication, modernity and perfection. However, the emblem that can be seen on radiator grills and wheels has the red font on several models to stress on performance and passion.\\n",
       "title":"Jaguar",
-      "website":"www.jaguar.com"
+      "website":"www.jaguar.com",
+       "category":"UK",
    },
    {  
       "founded":"1929",
@@ -1057,7 +1150,8 @@ export default {
       "icon":require('../images/Jeep-logo.jpg'),
       "overview":"Jeep is a brand of American automobiles that is a division of FCA US LLC (formerly Chrysler Group, LLC), a wholly owned subsidiary of Fiat Chrysler Automobiles. The former Chrysler Corporation acquired the Jeep brand, along with the remaining assets of its owner American Motors, in 1987. The original Jeep was the prototype Bantam BRC. Willys MB Jeeps went into production in 1941 specifically for the military, arguably making them the oldest four-wheel drive mass-production vehicles now known as SUVs.",
       "title":"Jeep",
-      "website":"www.jeep.com"
+      "website":"www.jeep.com",
+       "category":"USA",
    },
    {  
       "founded":"1934",
@@ -1065,7 +1159,8 @@ export default {
       "hq":"West Bromwich, England, United Kingdom",
       "icon":require('../images/Jensen-logo.jpg'),
       "overview":"Jensen Motors Ltd was a British manufacturer of sports cars and commercial vehicles in Lyng, West Bromwich, west of Birmingham England. Brothers Alan and Richard Jensen gave the new name, Jensen Motors Limited, to the Lyng commercial body and sports car body making business of W J Smith & Sons Limited in 1934. It ceased trading in 1976.",
-      "title":"Jensen"
+      "title":"Jensen",
+       "category":"UK",
    },
    {  
       "founded":"1968",
@@ -1073,7 +1168,8 @@ export default {
       "icon":require('../images/JMC-logo.jpg'),
       "overview":"",
       "title":"JMC",
-      "website":"www.jmc.com.cn"
+      "website":"www.jmc.com.cn",
+       "category":"CHN",
    },
    {  
       "founded":"1945",
@@ -1081,7 +1177,8 @@ export default {
       "hq":"Willow Run, United States",
       "icon":require('../images/Kaiser-logo.jpg'),
       "overview":"Kaiser Motors (formerly Kaiser-Frazer) Corporation made automobiles at Willow Run, Michigan, United States, from 1945 to 1953. In 1953, Kaiser merged with Willys-Overland to form Willys Motors Incorporated, moving its production operations to the Willys plant at Toledo, Ohio. The company changed its name to Kaiser Jeep Corporation in 1963.",
-      "title":"Kaiser"
+      "title":"Kaiser",
+       "category":"USA",
    },
    {  
       "founded":"1923",
@@ -1089,7 +1186,8 @@ export default {
       "icon":require('../images/Kenworth-logo.jpg'),
       "overview":"",
       "title":"Kenworth",
-      "website":"www.kenworth.com"
+      "website":"www.kenworth.com",
+       "category":"USA",
    },
    {  
       "founded":"1944",
@@ -1132,7 +1230,8 @@ export default {
       "icon":require('../images/Lagonda-logo.jpg'),
       "overview":"\"Lagonda was founded as a company in 1906 in Staines, Surrey, by a Scottish-American, Wilbur Gunn (1859–1920), a former opera singer. He became a British national in 1891 and worked as a speed boat and motorcycle engineer in Staines, England. He named the company after the Shawnee settlement \"Lagonda\" in modern-day Springfield, Ohio, the town of his birth.\\n",
       "title":"Lagonda",
-      "website":"www.astonmartin.com/lagonda"
+      "website":"www.astonmartin.com/lagonda",
+       "category":"UK",
    },
    {  
       "founded":"Oct 30, 1963",
@@ -1141,7 +1240,8 @@ export default {
       "icon":require('../images/Lamborghini-logo.jpg'),
       "overview":"\"The bull represents Lamborghini sports cars power.\\n",
       "title":"Lamborghini",
-      "website":"www.lamborghini.com"
+      "website":"www.lamborghini.com",
+       "category":"ITA",
    },
    {  
       "founded":"1906",
@@ -1150,7 +1250,8 @@ export default {
       "icon":require('../images/Lancia-logo.jpg'),
       "overview":"Lancia is an Italian automobile manufacturer founded in 1906 by Vincenzo Lancia as Lancia & C.. It became part of the Fiat Group in 1969; the current company, Lancia Automobiles S.p.A., was established in 2007.",
       "title":"Lancia",
-      "website":"www.lancia.com"
+      "website":"www.lancia.com",
+       "category":"ITA",
    },
    {  
       "founded":"1948",
@@ -1159,7 +1260,8 @@ export default {
       "icon":require('../images/Land-Rover-logo.jpg'),
       "overview":"In 2008, Ford Motor Company sold Jaguar and Land Rover to Tata Motors. Included in the deal were the rights to three other British brands: Jaguar's own Daimler marque, as well as two dormant brands Lanchester and Rover. BMW and Ford had previously retained ownership of the Rover brand to protect the integrity of the Land Rover brand, with which 'Rover' might be confused in the US 4x4 market; the Rover brand was originally used under licence by MG Rover until it collapsed in 2005, at which point it was re-acquired by the then Ford Motor Company owned Land Rover Limited. This sale also included the dormant Rover brand. As of August 2012, most Land Rovers in production are powered by Ford engines. Under the terms of the acquisition, Tata has the right to buy engines from Ford until 2019.",
       "title":"Land Rover",
-      "website":"www.landrover.com"
+      "website":"www.landrover.com",
+       "category":"UK",
    },
    {  
       "founded":"2002",
@@ -1167,7 +1269,8 @@ export default {
       "icon":require('../images/Landwind-logo.jpg'),
       "overview":"",
       "title":"Landwind",
-      "website":"www.landwind.com"
+      "website":"www.landwind.com",
+       "category":"CHN",
    },
    {  
       "founded":"1999",
@@ -1185,14 +1288,16 @@ export default {
       "icon":require('../images/Lexus-logo.jpg'),
       "overview":"\"Molly Designs and Hunter Communications were assigned to create logo for the brand. The first version of the badge consisted of letter L which was encased inside an oval theme of steel gray. Representatives of Toyota said that the logo was adoption of precise math formula. The first autos with new logo on their body were resented in 1988 at the Chicago, NY and LA Auto Show.\\n",
       "title":"Lexus",
-      "website":"www.lexus.com"
+      "website":"www.lexus.com",
+       "category":"JPN",
    },
    {  
       "founded":"1896",
       "hq":"Leyland, England, United Kingdom",
       "icon":require('../images/Leyland-logo.jpg'),
       "overview":"Leyland Motors Limited was a British vehicle manufacturer of lorries, buses and trolleybuses. It gave its name to the British Leyland Motor Corporation formed when it merged with British Motor Holdings, later to become British Leyland after being nationalised. British Leyland later changed its name to simply BL, then in 1986 to Rover Group.",
-      "title":"Leyland"
+      "title":"Leyland",
+       "category":"UK",
    },
    {  
       "founded":"1968",
@@ -1201,7 +1306,8 @@ export default {
       "icon":require('../images/Ligier-logo.jpg'),
       "overview":"Ligier is a French automobile maker created by former racing driver and rugby player Guy Ligier, specialized in the manufacturing of microcars. Ligier is best known for its involvement in the Formula 1 World Championship between 1976 and 1996.",
       "title":"Ligier",
-      "website":"www.ligier.fr"
+      "website":"www.ligier.fr",
+       "category":"FRA",
    },
    {  
       "founded":"1917",
@@ -1210,14 +1316,16 @@ export default {
       "icon":require('../images/Lincoln-logo.jpg'),
       "overview":"\"Over the years, many theories on the origin of Lincoln’s emblem have developed. On one hand, people assert it’s a compass with hands directed to the four corners of the earth. This showed the brand’s intent to spread its vehicles across the world. Others assert the emblem, often called the Lincoln Star, is a celestial body that reflects the brand’s opulence and radiance. Still others claim the badge has no real meaning behind it.\\n",
       "title":"Lincoln",
-      "website":"www.lincoln.com"
+      "website":"www.lincoln.com",
+       "category":"USA",
    },
    {  
       "founded":"1908",
       "hq":"Bremen, Germany",
       "icon":require('../images/Lloyd-logo.jpg'),
       "overview":"Norddeutsche Automobil und Motoren GmbH (North German Automobile and Engines) was a German automobile manufacturer, created in 1908 and owned by the Norddeutscher Lloyd shipping company. The factory was in Bremen. Many of the products of the company and its successors were badged with the Lloyd marque. The German Lloyd marque had no connection with the British Lloyd Cars Ltd company active between 1936 and 1951.",
-      "title":"Lloyd"
+      "title":"Lloyd",
+       "category":"GER",
    },
    {  
       "founded":"1952",
@@ -1226,7 +1334,8 @@ export default {
       "icon":require('../images/Lotus-logo.jpg'),
       "overview":"\"Lotus cars marked, in the oval on the floor inlaid with abstract lotus shape, above in addition to the word \"Lotus\" (LOTUS), also founder of Chapman Name Name (A.C.B CHAPMAN) four letters of the alphabet \"A. C. B. C superposition made. The use of yellow color in the Lotus logo embodies sun, energy and joy. The other color, British racing green, exemplifies speed and passion.\\n",
       "title":"Lotus",
-      "website":"www.lotuscars.com"
+      "website":"www.lotuscars.com",
+       "category":"UK",
    },
    {  
       "founded":"2009",
@@ -1234,7 +1343,8 @@ export default {
       "icon":require('../images/Luxgen-logo.jpg'),
       "overview":"Luxgen Motor Co., Ltd. is a Taiwanese automaker headquartered in Sanyi, Miaoli, Taiwan and a wholly owned subsidiary of Yulon Motor. It was founded in January 2009 and Luxgen vehicles have been manufactured in Hangzhou, China by Dongfeng Yulon since late-2010. Luxgen products are primarily developed by another Yulon subsidiary, HAITEC. The company's slogan is \"Think Ahead\".",
       "title":"Luxgen",
-      "website":"www.luxgen-motor.com"
+      "website":"www.luxgen-motor.com",
+       "category":"CHN",
    },
    {  
       "founded":"1900",
@@ -1242,7 +1352,8 @@ export default {
       "icon":require('../images/Mack-logo.jpg'),
       "overview":"",
       "title":"Mack",
-      "website":"www.macktrucks.com"
+      "website":"www.macktrucks.com",
+       "category":"USA",
    },
    {  
       "founded":"1945",
@@ -1258,7 +1369,8 @@ export default {
       "icon":require('../images/MAN-logo.jpg'),
       "overview":"MAN SE formerly MAN AG, is a German mechanical engineering company and parent company of the MAN Group. MAN SE is based in Munich. Its primary output is for the automotive industry, particularly heavy trucks. Further activities include the production of diesel engines for various applications, like marine propulsion, and also turbomachinery.",
       "title":"MAN",
-      "website":"www.mantruckandbus.com"
+      "website":"www.mantruckandbus.com",
+       "category":"GER",
    },
    {  
       "founded":"1959",
@@ -1267,7 +1379,8 @@ export default {
       "icon":require('../images/Marcos-logo.jpg'),
       "overview":"Marcos Engineering was a British sports car manufacturer. The name derives from the surnames of founders Jem Marsh and Frank Costin. On 9 October 2007 it was again announced that Marcos would cease production and go into voluntary liquidation.",
       "title":"Marcos",
-      "website":"www.marcos-eng.com"
+      "website":"www.marcos-eng.com",
+       "category":"UK",
    },
    {  
       "founded":"Automotive",
@@ -1276,7 +1389,8 @@ export default {
       "icon":require('../images/Maserati-logo.jpg'),
       "overview":"\"Maserati is an Italian luxury vehicle manufacturer established on December 1, 1914, in Bologna. The company's headquarters are now in Modena, and its emblem is a trident. It has been owned by the Italian–American car giant Fiat Chrysler Automobiles (FCA) and FCA's Italian predecessor Fiat S.p.A. since 1993.\\n\"The trident logo of the Maserati car company is based on the Fountain of Neptune in Bologna’s Piazza Maggiore. In 1920 one of the Maserati brothers, artist Mario, used this symbol in the logo at the suggestion of family friend Marquis Diego de Sterlich. It was considered particularly appropriate for the sports car company due to fact that Neptune represents strength and vigor; additionally the statue is a characteristic symbol of the company’s original home city.\\n\"The Maserati logo comprises of a white trident on a blue background, symbolizing Neptune’s trident at Bologna’s Piazza Maggiore. The tagline, “Excellence through passion”, in uppercase characters is placed below. The Maserati logo was first introduced in 1926 when the brothers produced their first Tipo 26 model.\\n",
       "title":"Maserati",
-      "website":"www.maserati.com"
+      "website":"www.maserati.com",
+       "category":"ITA",
    },
    {  
       "founded":"2011",
@@ -1284,7 +1398,8 @@ export default {
       "icon":require('../images/Maxus-logo.jpg'),
       "overview":"",
       "title":"Maxus",
-      "website":"www.saicmaxus.com"
+      "website":"www.saicmaxus.com",
+       "category":"CHN",
    },
    {  
       "founded":"1909",
@@ -1293,7 +1408,8 @@ export default {
       "icon":require('../images/Maybach-logo.jpg'),
       "overview":"\"The manufacturer of Maybach was founded in German by Wilhem Maybach in 1909 together with his son named Karl Maybach. The factory had big role in World War 2, since the design as well as the production was used for the military properties, such as armored vehicles. Maybach becomes one of the luxury cars of Mercedes Benz in early 2000. The double Ms in Maybach logo are actually the abbreviation of Maybach Motorenbau and it also exposes the symbol of swastika as stated in Dr. Rex Curry’s note.\\n",
       "title":"Maybach",
-      "website":"www.mercedes-benz.com"
+      "website":"www.mercedes-benz.com",
+       "category":"GER",
    },
    {  
       "founded":"1920",
@@ -1302,7 +1418,8 @@ export default {
       "icon":require('../images/Mazda-logo.jpg'),
       "overview":"Mazda Motor Corporation ( Mazda ) is a Japanese automaker based in Fuchū, Aki District, Hiroshima Prefecture, Japan. 2011, Mazda was the fifteenth biggest automaker by production worldwide.",
       "title":"Mazda",
-      "website":"www.mazda.com"
+      "website":"www.mazda.com",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1972",
@@ -1310,7 +1427,8 @@ export default {
       "icon":require('../images/M-BMW-logo.jpg'),
       "overview":"\"The BMW ///M logo, the three stripes that make M branded cars even more recognizable. So, let’s see what we can learn about the “M” today.\\n",
       "title":"M BMW",
-      "website":"www.bmwusa.com/bmw/m/"
+      "website":"www.bmwusa.com/bmw/m/",
+       "category":"GER",
    },
    {  
       "founded":"1963",
@@ -1319,7 +1437,8 @@ export default {
       "icon":require('../images/McLaren-logo.jpg'),
       "overview":"McLaren Automotive ( McLaren) is a British automotive manufacturer of luxury, high-performance sports cars.",
       "title":"McLaren",
-      "website":"www.mclaren.com"
+      "website":"www.mclaren.com",
+       "category":"UK",
    },
    {  
       "founded":"1959",
@@ -1327,7 +1446,8 @@ export default {
       "hq":"Germany",
       "icon":require('../images/Melkus-logo.jpg'),
       "overview":"",
-      "title":"Melkus"
+      "title":"Melkus",
+       "category":"GER",
    },
    {  
       "founded":"1926",
@@ -1336,7 +1456,8 @@ export default {
       "icon":require('../images/Mercedes-Benz-logo.jpg'),
       "overview":"\"The logo comprises of an illustration of a three-pointed star that symbolizes the company’s “domination of the land, the sea, and the air”. It was first introduced in 1909.\\n\"In 1926, after the merging of Benz and Daimler, which resulted in the inception of a new german automobile brand – Mercedes-Benz, the actual trademark was finally developed. It is a star of three pikes embosomed with a bordering with laureate wreath and the brand name on it, which still designates Mercedes cars. Since then the logo has experienced insignificant amendments, the bordering of laurel wreath morphed into an unpretentious circle.\\n",
       "title":"Mercedes-Benz",
-      "website":"www.mercedes-benz.com"
+      "website":"www.mercedes-benz.com",
+       "category":"GER, Popular"
    },
    {  
       "founded":"1937",
@@ -1345,14 +1466,16 @@ export default {
       "icon":require('../images/Mercury-logo.jpg'),
       "overview":"Mercury is a defunct American-market division of automobile manufacturer Ford Motor Company. Created in 1937 by Edsel Ford, Mercury was an entry-level premium brand intended to bridge the price gap between the Ford and Lincoln vehicle lines. As similar brands, Buick and Oldsmobile played a similar role within General Motors while Mercury competed against the namesake brand of.",
       "title":"Mercury",
-      "website":"www.mercuryvehicles.com"
+      "website":"www.mercuryvehicles.com",
+       "category":"USA",
    },
    {  
       "founded":"1985",
       "hq":"Dearborn, Michigan, United States",
       "icon":require('../images/Merkur-logo.jpg'),
       "overview":"Merkur was a short-lived automobile brand sold by the Lincoln-Mercury division of Ford Motor Company from 1985 to 1989. Using captive imports produced by the German division of Ford of Europe, Merkur was targeted at buyers of European luxury brands. In the early 1980s, for various reasons, buyers of traditional American luxury brands such as Cadillac, Chrysler, and Lincoln began to shift their buying preferences towards European-produced cars from Audi, BMW, Mercedes-Benz, and Volvo. As a response, Japanese automaker Honda launched Acura in 1985 with their contemporaries Nissan and Toyota, later developing Infiniti and Lexus, respectively. In its own response, Ford created the Merkur (German for Mercury) franchise for select Lincoln-Mercury dealers in the United States and Canada; approximately 800 Lincoln-Mercury dealers would take on Merkur franchises.",
-      "title":"Merkur"
+      "title":"Merkur",
+       "category":"USA",
    },
    {  
       "founded":"1924",
@@ -1361,7 +1484,8 @@ export default {
       "icon":require('../images/MG-logo.jpg'),
       "overview":"MG underwent many changes in ownership starting with Morris merging with Austin in The British Motor Corporation Limited in 1952. MG became the MG Division of BMC in 1967 and so a component of the 1968 merger that created British Leyland Motor Corporation. By the start of 2000 MG was part of the MG Rover Group which entered receivership in 2005 and the assets and the MG brand were purchased by Nanjing Automobile Group (which merged into SAIC in 2008) for GB£53 million.",
       "title":"MG",
-      "website":"www.mg.co.uk"
+      "website":"www.mg.co.uk",
+       "category":"UK",
    },
    {  
       "icon":require('../images/Microcar-logo.jpg'),
@@ -1384,7 +1508,8 @@ export default {
       "icon":require('../images/Mitsubishi-logo.jpg'),
       "overview":"Mitsubishi Motors Corporation is a multinational automotive manufacturer headquartered in Minato, Tokyo, Japan. In 2011, Mitsubishi Motors was the sixth biggest Japanese automaker and the sixteenth biggest worldwide by production. As of June 2016, Mitsubishi is majority-owned by Nissan, and thus a part of the Renault-Nissan Alliance.",
       "title":"Mitsubishi",
-      "website":"www.mitsubishi-motors.com"
+      "website":"www.mitsubishi-motors.com",
+       "category":"JPN",
    },
    {  
       "founded":"1968",
@@ -1392,7 +1517,8 @@ export default {
       "icon":require('../images/Mitsuoka-logo.jpg'),
       "overview":"Mitsuoka Motors is a small Japanese automobile company. It is noted for building unique cars with unconventional styling, some of which imitate British vehicles of the 1950s and 1960s.[1] It is primarily a coachbuilder, taking production cars, like the Nissan March, and replacing various aspects of the bodywork with its own custom designs. It has also produced a sports car, the Orochi. Mitsuoka Motors is also the principal distributor of retro-classic TD2000 roadster in Japan. Mitsuoka was recognised in 1996 as the 10th Japanese auto manufacturer to be registered in Japan since Honda in 1963. It bases its current cars on Nissans and other Japanese car manufacturers. Mitsuoka Motor has a sales outlet in England and is soon to launch the Mitsuoka Roadster (Himiko) in the UK which is based on the Mazda Roadster.",
       "title":"Mitsuoka",
-      "website":"www.mitsuoka-motor.com"
+      "website":"www.mitsuoka-motor.com",
+       "category":"JPN",
    },
    {  
       "founded":"1910",
@@ -1401,14 +1527,16 @@ export default {
       "icon":require('../images/Morgan-logo.jpg'),
       "overview":"\"The origin of the Morgan Motor Company‘s logo is uncertain, though the wings may be inspired by a flying ace of the First World War, Captain Ball, who said that to drive a Morgan three-wheeler as the nearest thing to flying on the ground.\\n\"Morgan recently updated their logo, In their words, “This evolution is a combination of the existing Wings, the version of the Wings found on the front of our cars and an update to make it more contemporary.”\\n",
       "title":"Morgan",
-      "website":"www.morgan-motor.co.uk"
+      "website":"www.morgan-motor.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1919",
       "hq":"Longbridge, England, United Kingdom",
       "icon":require('../images/Morris-logo.jpg'),
       "overview":"Morris Motors Limited was a British motor vehicle manufacturer formed in 1919 to take over the assets of WRM Motors Ltd., which had been put into voluntary liquidation. Though merged into larger organisations, the Morris name remained in use until 1984 when British Leyland's Austin Rover Group decided to concentrate on the more popular Austin brand. The trademark is currently owned by the China-based automotive company SAIC after being transferred from bankrupt subsidiary Nanjing Automotive. Today, the former Morris manufacturing complex at Cowley, Oxford survives as Plant Oxford, and is owned by the BMW Group as the headquarters of the MINI marque and associated family of vehicles.",
-      "title":"Morris"
+      "title":"Morris",
+       "category":"UK",
    },
    {  
       "founded":"1985",
@@ -1417,7 +1545,8 @@ export default {
       "icon":require('../images/Mosler-logo.jpg'),
       "overview":"Mosler Automotive was an American supercar manufacturer based in Florida. It was founded in 1985 by Warren Mosler as Consulier Industries, and manufactured the now-defunct Consulier GTP, which was later rebranded and updated as the Mosler Intruder/Raptor when the company spun off its automotive division as Mosler Automotive. The company produced the MT900R racer and the street-legal MT900S, as well as several unique project vehicles, until its demise in June 2013. Additional manufacturing facilities are based in St Ives, Cambridgeshire, England. Filmmaker George Lucas was the first to take delivery of the MT900S.",
       "title":"Mosler",
-      "website":"www.moslerauto.com"
+      "website":"www.moslerauto.com",
+       "category":"USA",
    },
    {  
       "icon":require('../images/Mustang-logo.jpg'),
@@ -1431,7 +1560,8 @@ export default {
       "icon":require('../images/Nissan-logo.jpg'),
       "overview":"\"Nissan was the sixth largest automaker in the world behind Toyota, General Motors, Volkswagen Group, Hyundai Motor Group, and Ford in 2013. Nissan is the major brand of Nissan Motor Corporation, along with Infiniti, Datsun and NISMO.\\n\"In 2012 saw the logo acquire gradient shades of silver and grey. The chrome-colored theme in the Nissan logo represents sophistication, modernism, creativity and perfection of the company’s products.\\n\"Matched with the company’s new slogan, ‘Innovation that excites’, the emblem reflect the brand’s new identity but refers to long-standing traditions. Today Nissan cars are recognized for quality, innovation, elegance and have leading positions in many global markets.\\n",
       "title":"Nissan",
-      "website":"www.nissan-global.com"
+      "website":"www.nissan-global.com",
+       "category":"JPN",
    },
    {  
       "founded":"1999",
@@ -1440,7 +1570,8 @@ export default {
       "icon":require('../images/Noble-logo.jpg'),
       "overview":"",
       "title":"Noble",
-      "website":"www.noblecars.com"
+      "website":"www.noblecars.com",
+       "category":"UK",
    },
    {  
       "founded":"1897",
@@ -1449,7 +1580,8 @@ export default {
       "icon":require('../images/Oldsmobile-logo.jpg'),
       "overview":"Oldsmobile was a brand of American automobiles produced for most of its existence by General Motors. Olds Motor Vehicle Co. was founded by Ransom E. Olds in 1897. In its 107-year history, it produced 35.2 million cars, including at least 14 million built at its Lansing, Michigan factory. When it was phased out in 2004, Oldsmobile was the oldest surviving American automobile marque, and one of the oldest in the world, after Daimler, Peugeot and Tatra. Though it was closed in 2004, it still remains an active trademark of the General Motors Corporation. The closing of the Oldsmobile division presaged a larger consolidation of GM brands and discontinuation of models during the company's 2009 bankruptcy reorganization.",
       "title":"Oldsmobile",
-      "website":"http://www.gm.com/owner-assistance/oldsmobile.html"
+      "website":"http://www.gm.com/owner-assistance/oldsmobile.html",
+       "category":"USA",
    },
    {  
       "founded":"1976",
@@ -1465,7 +1597,8 @@ export default {
       "icon":require('../images/Opel-logo.jpg'),
       "overview":"Adam Opel AG is a German automobile manufacturer headquartered in Rüsselsheim, Hesse, Germany, and a subsidiary of General Motors Company. Opel designed and manufactured vehicles are also sold under the Buick brand in the United States, Canada, Mexico, and China, the Holden brand in Australia and New Zealand, and the Vauxhall brand in the United Kingdom.",
       "title":"Opel",
-      "website":"www.opel.com"
+      "website":"www.opel.com",
+       "category":"GER, Popular",
    },
    {  
       "founded":"1947",
@@ -1473,7 +1606,8 @@ export default {
       "hq":"San Lazzaro di Savena, Bologna, Italy",
       "icon":require('../images/OSCA-logo.jpg'),
       "overview":"O.S.C.A. (Officine Specializzate Costruzione Automobili—Fratelli Maserati S.p.A.) was an Italian manufacturer of racing and sports cars established 1947 in San Lazzaro di Savena, Bologna, by the Maserati brothers, and closed down in 1967. Its name is usually abbreviated to OSCA or Osca.",
-      "title":"OSCA"
+      "title":"OSCA",
+       "category":"ITA",
    },
    {  
       "founded":"1992",
@@ -1482,7 +1616,8 @@ export default {
       "icon":require('../images/Pagani-logo.jpg'),
       "overview":"",
       "title":"Pagani",
-      "website":"www.pagani.com"
+      "website":"www.pagani.com",
+       "category":"ITA",
    },
    {  
       "founded":"1891",
@@ -1491,7 +1626,8 @@ export default {
       "icon":require('../images/Panhard-logo.jpg'),
       "overview":"Panhard was originally called Panhard et Levassor, and was established as a car manufacturing concern by René Panhard and Émile Levassor in 1887. Panhard is a French manufacturer of light tactical and military vehicles. Its current incarnation, now owned by Renault Trucks Defense, was formed by the acquisition of Panhard by Auverland in 2005. Panhard had been under Citroën ownership, then PSA (Peugeot société anonyme) after the 1974 takeover of Citroën by Peugeot, for 40 years. The combined company now uses the Panhard name; this was decided based on studies indicating that the Panhard name had better brand recognition worldwide than the Auverland name.",
       "title":"Panhard",
-      "website":"www.panhard-defense.fr"
+      "website":"www.panhard-defense.fr",
+       "category":"FRA",
    },
    {  
       "founded":"1993",
@@ -1507,7 +1643,8 @@ export default {
       "icon":require('../images/Peterbilt-logo.jpg'),
       "overview":"",
       "title":"Peterbilt",
-      "website":"www.peterbilt.com"
+      "website":"www.peterbilt.com",
+       "category":"USA",
    },
    {  
       "founded":"1896",
@@ -1516,7 +1653,8 @@ export default {
       "icon":require('../images/Peugeot-logo.jpg'),
       "overview":"\"Another change of Peugeot crest took place in 1998. Lion got its paws showcasing the power and corporate balance of the company. Blue color was also added as association with forward-looking approach. Current logo which was unveiled in 2002 is known as ”Blue Brand”. It also has a black lion shadow.\\n\"In 1976, the PSA Peugeot-Citroën holding company was born after the merger of Peugeot and Citroën. The group then acquired the Chrysler Europe in 1978. In an effort to strengthen its corporate image, Peugeot reverted back to the heraldic lion, with a much refined and sophisticated design called “Lion fil”.\\n",
       "title":"Peugeot",
-      "website":"www.peugeot.com"
+      "website":"www.peugeot.com",
+       "category":"FRA",
    },
    {  
       "founded":"1985",
@@ -1525,7 +1663,8 @@ export default {
       "icon":require('../images/PGO-logo.jpg'),
       "overview":"PGO Automobiles is a French car manufacturer, producing exclusive series' of sports cars. The brand operates in the same special market as Lotus, Wiesmann, Donkervoort and Morgan. Their cars are considered an appropriate solution for connoisseurs seeking for individuality and style.",
       "title":"PGO",
-      "website":"www.pgo.fr"
+      "website":"www.pgo.fr",
+       "category":"FRA",
    },
    {  
       "founded":"1901",
@@ -1533,7 +1672,8 @@ export default {
       "hq":"Buffalo, New York, United States",
       "icon":require('../images/Pierce-Arrow-logo.jpg'),
       "overview":"Pierce-Arrow Motor Car Company was an American automobile manufacturer based in Buffalo, New York, which was active from 1901 to 1938. Although best known for its expensive luxury cars, Pierce-Arrow also manufactured commercial trucks, fire trucks, camp trailers, motorcycles, and bicycles.",
-      "title":"Pierce-Arrow"
+      "title":"Pierce-Arrow",
+       "category":"USA",
    },
    {  
       "founded":"1930",
@@ -1542,7 +1682,8 @@ export default {
       "icon":require('../images/Pininfarina-logo.jpg'),
       "overview":"Pininfarina S.p.A. (short for Carozzeria Pininfarina) is an Italian car design firm and coachbuilder in Cambiano, Italy. It was founded by Battista \"Pinin\" Farina in 1930.On December 14, 2015, Mahindra Group, acquired Pininfarina S.p.A. in a deal worth about 168 million euros ($185 million).",
       "title":"Pininfarina",
-      "website":"www.pininfarina.com"
+      "website":"www.pininfarina.com",
+       "category":"ITA",
    },
    {  
       "founded":"1928",
@@ -1550,7 +1691,8 @@ export default {
       "hq":"Auburn Hills, Michigan, United States",
       "icon":require('../images/Plymouth-logo.jpg'),
       "overview":"Plymouth was a brand of automobiles based in the United States, produced by the Chrysler Corporation and its successor Daimler Chrysler. The brand first appeared in 1928 in the United States and was discontinued in 2001.",
-      "title":"Plymouth"
+      "title":"Plymouth",
+       "category":"USA",
    },
    {  
       "founded":"1926",
@@ -1558,7 +1700,8 @@ export default {
       "icon":require('../images/Pontiac-logo.jpg'),
       "overview":"\"In 1956, the Native American head design was retired. In order to appeal to youthful consumers looking for affordable performance vehicles, the old-fashioned Native American profile was replaced with a subtler, elegant emblem: a downward-facing, red arrowhead known as the “Dart.”\\n\"While traces of the new logo began appearing in 1957, including the stars along the Star Chief model’s body, the badge didn’t officially debut on the Bonneville’s split grille until the 1959 wide track model.\\n\"The name \"Firebird\" was also previously used by Pontiac's parent company General Motors for the General Motors Firebird 1950s and early-1960s concept cars.\\n",
       "title":"Pontiac",
-      "website":"www.pontiac.com"
+      "website":"www.pontiac.com",
+       "category":"USA",
    },
    {  
       "founded":"Stuttgart, Germany (1931)",
@@ -1567,7 +1710,8 @@ export default {
       "icon":require('../images/Porsche-logo.jpg'),
       "overview":"\"The central part of the logo depicts a black horse headlong, an expression of forward putting power and an origin of the city note. black and red stripes and antlers are symbols of the German region of Baden-Württemberg, the inscription «Porsche» and prancing stallion on the logo reminded that native Stuttgart brand was created as a horse farm in 950. The author was Franz Xaver Raymshpiss.\\n",
       "title":"Porsche",
-      "website":"www.porsche.com"
+      "website":"www.porsche.com",
+       "category":"GER, Popular",
    },
    {  
       "founded":"1907",
@@ -1592,12 +1736,14 @@ export default {
       "icon":require('../images/Qoros-logo.jpg'),
       "overview":"\"Guan Zhi is our name in China. 'Guan' means learning, observation and adaptation to a changing world; 'Zhi' means perfection and striving to be best.\\n",
       "title":"Qoros",
-      "website":"www.qoros.com"
+      "website":"www.qoros.com",
+       "category":"CHN",
    },
    {  
       "icon":require('../images/Rambler-logo.jpg'),
       "overview":"Rambler was an automobile brand name used by the Thomas B. Jeffery Company between 1900 and 1914, then by its successor, Nash Motors from 1950 to 1954, and finally by Nash's successor, American Motors Corporation from 1954 to 1969 in the United States and 1983 in international markets. It was often nicknamed the \"Kenosha Cadillac\" after its place of manufacture.",
-      "title":"Rambler"
+      "title":"Rambler",
+       "category":"USA",
    },
    {  
       "founded":"2010",
@@ -1605,7 +1751,8 @@ export default {
       "icon":require('../images/RAM-logo.jpg'),
       "overview":"Ram Trucks, stylized as RAM (formally known as the Ram Truck Division) is a United States-based brand of light to mid-weight commercial vehicles established in 2009 as a division of FCA US LLC, a wholly owned subsidiary of Fiat Chrysler Automobiles. It was spun-off from Dodge marque, using the name of the popular Dodge Ram line of trucks. Ram Trucks' logo was originally Dodge's logo.",
       "title":"RAM",
-      "website":"www.ramtrucks.com"
+      "website":"www.ramtrucks.com",
+       "category":"USA",
    },
    {  
       "founded":"2013",
@@ -1620,7 +1767,8 @@ export default {
       "icon":require('../images/Renault-logo.jpg'),
       "overview":"Renault was the eleventh biggest automaker in the world by production volume, with 50.5% of sales coming outside of Europe. The Renault–Nissan Alliance is the fourth-largest automotive group.",
       "title":"Renault",
-      "website":"www.renault.com"
+      "website":"www.renault.com",
+       "category":"FRA",
    },
    {  
       "founded":"2014",
@@ -1629,14 +1777,16 @@ export default {
       "icon":require('../images/Rezvani-logo.jpg'),
       "overview":"Rezvani Motors is an Iranian automotive designer and manufacturer of high-performance supercars based in Irvine, California. Rezvani Motors was founded by Ferris Rezvani, one of the designers of Vencer’s Sarthe supercar who formerly worked with Aston Martin, Ferrari, and DBC. The company's main product is the Rezvani Beast, a self-funded project by Rezvani. Chris Brown purchased the first Rezvani Beast in 2015 for $200,000. The car was used in the filming of Brown's single \"Liquor.\" The 500 horsepower street-legal race car has no doors, no roof, and weighs just 1,650 pounds.",
       "title":"Rezvani",
-      "website":"www.rezvanimotors.com"
+      "website":"www.rezvanimotors.com",
+       "category":"USA",
    },
    {  
       "founded":"1896",
       "hq":"Coventry, England, United Kingdom",
       "icon":require('../images/Riley-logo.jpg'),
       "overview":"Riley was a British motorcar and bicycle manufacturer from 1890. Riley became part of the Nuffield Organisation in 1938 and was merged into the British Leyland Motor Corporation in 1968. ln July 1969 British Leyland announced the immediate end of Riley production, although 1969 was a difficult year for the UK auto industry and cars from Riley's inventory may have been first registered in 1970. Today, the Riley trademark is owned by BMW.",
-      "title":"Riley"
+      "title":"Riley",
+       "category":"UK",
    },
    {  
       "founded":"2009",
@@ -1662,7 +1812,8 @@ export default {
       "icon":require('../images/Roewe-logo.jpg'),
       "overview":"Roewe is a vehicle marque created by the Chinese automaker SAIC Motor in 2006. Roewe vehicles were initially based on technology acquired from defunct British carmaker MG Rover. SAIC was unable to purchase the rights to the Rover brand name and created the Roewe marque as a replacement. The MG name is preferred in most markets outside China.",
       "title":"Roewe",
-      "website":"www.roewe.com.cn"
+      "website":"www.roewe.com.cn",
+       "category":"CHN"
    },
    {  
       "founded":"1906",
@@ -1671,7 +1822,8 @@ export default {
       "icon":require('../images/Rolls-Royce-logo.jpg'),
       "overview":"Rolls-Royce Motor Cars Limited is a wholly owned subsidiary of BMW established in 1998 after BMW was licensed the rights to the Rolls-Royce brand name and logo from Rolls-Royce PLC and acquired the rights to the Spirit of Ecstasy and Rolls-Royce grill shape trademarks from Volkswagen AG.",
       "title":"Rolls-Royce",
-      "website":"www.rolls-roycemotorcars.com"
+      "website":"www.rolls-roycemotorcars.com",
+       "category":"UK",
    },
    {  
       "founded":"2006",
@@ -1680,7 +1832,8 @@ export default {
       "icon":require('../images/Rossion-logo.jpg'),
       "overview":"",
       "title":"Rossion",
-      "website":"www.rossioncars.com"
+      "website":"www.rossioncars.com",
+       "category":"USA",
    },
    {  
       "founded":"1878",
@@ -1688,7 +1841,8 @@ export default {
       "hq":"England, United Kingdom (2000–2005)",
       "icon":require('../images/Rover-logo.jpg'),
       "overview":"Rover is a former British car manufacturing company founded as Starley & Sutton Co. of Coventry in 1878. It is the direct ancestor of the present day Land Rover company, which is a subsidiary of Jaguar Land Rover, in turn owned by the Tata Group.",
-      "title":"Rover"
+      "title":"Rover",
+       "category":"UK",
    },
    {  
       "founded":"1939",
@@ -1697,7 +1851,8 @@ export default {
       "icon":require('../images/RUF-logo.jpg'),
       "overview":"",
       "title":"RUF",
-      "website":"www.ruf-automobile.de"
+      "website":"www.ruf-automobile.de",
+       "category":"GER",
    },
    {  
       "founded":"1937",
@@ -1714,7 +1869,8 @@ export default {
       "icon":require('../images/SAIC-logo.jpg'),
       "overview":"SAIC Motor Corporation Limited (informally SAIC, formerly Shanghai Automotive Industry Corporation) is a Chinese state-owned automotive design and manufacturing company headquartered in Shanghai, China, with multinational operations. A Fortune Global 100 company and one of the \"Big Four\" state-owned Chinese automakers (along with Chang'an Motors, FAW Group, and Dongfeng Motor), the company had the largest production volume of any Chinese automaker in 2014 making more than 4.5 million vehicles. Its manufacturing mix is not wholly consumer offerings, however, with as many as 1,000,000+ SAIC passenger vehicles being commercial vans. SAIC traces its origins to the early years of the Chinese automobile industry in the 1940s, and SAIC was one of the few carmakers in Mao's China, making the Shanghai SH760. Currently, it participates in the oldest surviving sino-foreign car making joint venture, with Volkswagen, and in addition has had a joint venture with General Motors since 1998. SAIC products sell under a variety of brand names, including those of its joint venture partners. Two notable brands owned by SAIC itself are MG, a historic British car marque, and Roewe, one of the few domestic Chinese luxury car brands.",
       "title":"SAIC",
-      "website":"www.saicmotor.com"
+      "website":"www.saicmotor.com",
+       "category":"CHN",
    },
    {  
       "founded":"1984",
@@ -1723,7 +1879,8 @@ export default {
       "icon":require('../images/Saleen-logo.jpg'),
       "overview":"",
       "title":"Saleen",
-      "website":"www.saleen.com"
+      "website":"www.saleen.com",
+       "category":"USA",
    },
    {  
       "founded":"1985",
@@ -1732,7 +1889,8 @@ export default {
       "icon":require('../images/Saturn-logo.jpg'),
       "overview":"",
       "title":"Saturn",
-      "website":"www.saturn.com"
+      "website":"www.saturn.com",
+       "category":"USA",
    },
    {  
       "founded":"2003",
@@ -1740,7 +1898,8 @@ export default {
       "icon":require('../images/Scion-logo.jpg'),
       "overview":"\"The Scion logo is quite recognizable, designed originally by Los Angeles company Fresh Machine. Most analysts see it as a stylized “S” encircled and overlaid with the Scion nameplate. Others see it as the dorsal fin of a swimming shark, suggesting dynamic movement and the thrills of West coast watersports. It could be the mirrored image of a road leading into the horizon. It could even be two scythes (similar to the Scion name) or inspired by the negative space on the badge of the Toyota Sienta.\\n",
       "title":"Scion",
-      "website":"www.scion.com"
+      "website":"www.scion.com",
+       "category":"USA",
    },
    {  
       "founded":"1950",
@@ -1762,7 +1921,8 @@ export default {
       "hq":"Coventry, United Kingdom",
       "icon":require('../images/Singer-logo.jpg'),
       "overview":"Singer Motors Limited was a British motor vehicle manufacturing business, originally a bicycle manufacturer founded as Singer & Co by George Singer, in 1874 in Coventry, England. Singer & Co's bicycle manufacture continued. From 1901 George Singer's Singer Motor Co made cars and commercial vehicles.",
-      "title":"Singer"
+      "title":"Singer",
+       "category":"UK",
    },
    {  
       "founded":"1895",
@@ -1780,7 +1940,8 @@ export default {
       "icon":require('../images/Smart-logo.jpg'),
       "overview":"In late 1982, SMH (makers of the Swatch brand of watches) CEO Nicolas Hayek began developing an idea for a new car using the same type of manufacturing strategies and personalization features used to popularize Swatch watches. In 1993, Hayek discreetly began approaching other car companies with the Swatchmobile project. Rebuffed by BMW, Fiat, General Motors and Renault, he finally reached an informal agreement with Daimler-Benz AG, maker of Mercedes-Benz cars.",
       "title":"Smart",
-      "website":"www.smart.com"
+      "website":"www.smart.com",
+       "category":"GER",
    },
    {  
       "founded":"1995",
@@ -1788,7 +1949,8 @@ export default {
       "icon":require('../images/Soueast-logo.jpg'),
       "overview":"\"Soueast was founded in November 1995 as a joint venture between China Motor Corporation and Fujian Motor Industry Group. Mitsubishi became a partner in the joint venture in 2006.\\n",
       "title":"Soueast",
-      "website":"www.soueast-motor.com"
+      "website":"www.soueast-motor.com",
+       "category":"CHN",
    },
    {  
       "hq":"South Korea",
@@ -1825,7 +1987,8 @@ export default {
       "icon":require('../images/SSC-logo.jpg'),
       "overview":"SSC is an American supercar company founded in 1998 by automotive enthusiast, Jerod Shelby. SSC's headquarters in Tri-Cities, Washington, is also the hometown of Mr. Shelby and home to his dream. Fueled by his passion for racing and automotive culture SSC's success is a true representation of the American Dream. Competing with the likes of Ferrari, Lamborghini, Bugatti, and Koenigsegg (to name a few), SSC has and continues to exponentially accelerate in its development and production of world class supercars.  They built the SSC Aero, a kit car based on a Pontiac Fiero spaceframe chassis, equipped with a twin turbocharged pushrod engined V8s. Its turbocharged 6.35 litres (388 cu in) V8 produces 1,287 bhp (960 kW; 1,305 PS), which made it the most powerful production car in the world, until the arrival of Koenigsegg One:1 (1,341 bhp (1,000 kW; 1,360 PS)) in 2014. On September 13, 2007, the \"Ultimate Aero\" took the title of fastest production car. The Ultimate Aero has a top speed of 412 km/h (256 mph).",
       "title":"SSC",
-      "website":"www.sscnorthamerica.com"
+      "website":"www.sscnorthamerica.com",
+       "category":"USA",
    },
    {  
       "founded":"1852",
@@ -1833,7 +1996,8 @@ export default {
       "hq":"South Bend, Indiana, United States",
       "icon":require('../images/Studebaker-logo.jpg'),
       "overview":"Studebaker was an American wagon and automobile manufacturer based in South Bend, Indiana. Founded in 1852 and incorporated in 1868 under the name of the Studebaker Brothers Manufacturing Company, the company was originally a producer of wagons for farmers, miners, and the military.",
-      "title":"Studebaker"
+      "title":"Studebaker",
+       "category":"USA",
    },
    {  
       "founded":"1953",
@@ -1842,7 +2006,8 @@ export default {
       "icon":require('../images/Subaru-logo.jpg'),
       "overview":"Subaru is the automobile manufacturing division of Japanese transportation conglomerate Fuji Heavy Industries (FHI), the twenty-second biggest automaker by production worldwide in 2012. In Western markets, the Subaru brand has traditionally been popular among a dedicated core of buyers.",
       "title":"Subaru",
-      "website":"www.subaru-global.com"
+      "website":"www.subaru-global.com",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1909",
@@ -1851,14 +2016,16 @@ export default {
       "icon":require('../images/Suzuki-logo.jpg'),
       "overview":"\"The Suzuki logo comprises of a stylized “S”, the company’s initial, and the full name “Suzuki” next to it. First introduced in 1954, it has successfully stood the test of time for almost six decades now. The logo is an ideal example of a simple, clean and consistent, yet visually appealing and authoritative insignia. It is often considered as one of the most memorably and easily recognizable logos in the automotive industry.\\n\"Suzuki logo is arguably one of the most long-standing and globally recognized emblems in automotive world. Introduced in 1958, four years after the first Suzuki car had been built, the emblem featured a stylized ‘S’ letter, the initial of the brand’s name. Completed with full Suzuki name, the logo has become an icon.\\n",
       "title":"Suzuki",
-      "website":"www.suzuki.co.jp"
+      "website":"www.suzuki.co.jp",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1903",
       "hq":"Whitley, Coventry, United Kingdom Poissy, France",
       "icon":require('../images/Talbot-logo.jpg'),
       "overview":"Talbot was an automobile manufacturer founded in London in 1903 by investor Charles Chetwynd-Talbot and French engineer Adolphe Clément, later Clément-Bayard. Their products were named just Talbot from shortly after their first manufacture in London but their business remained Clément-Talbot Limited until 1938.",
-      "title":"Talbot"
+      "title":"Talbot",
+       "category":"FRA",
    },
    {  
       "founded":"1945",
@@ -1885,7 +2052,8 @@ export default {
       "icon":require('../images/TechArt-logo.jpg'),
       "overview":"The company was founded in 1987 by Thomas Behringer, with its headquarters located in Leonberg, Germany. Behringer wished to create cars which would blend artistic perfection with technologically advanced features. The company is recognized as an independent manufacturer. On May 10, 2008, the TechArt GT Street RS (based on a Porsche 997 GT2), driven by Jörg Hardt, ran the fastest time at the annual Tuner Grand Prix, beating out Porsche tuner Cargraphic, which had won the past three consecutive years. While not official, it is widely accepted that the winner of the Tuner GP is Europe's best tuner.",
       "title":"TechArt",
-      "website":"www.techart.de"
+      "website":"www.techart.de",
+       "category":"GER",
    },
    {  
       "founded":"2003",
@@ -1894,7 +2062,8 @@ export default {
       "icon":require('../images/Tesla-logo.jpg'),
       "overview":"Tesla Motors is named after electrical engineer and physicist Nikola Tesla. The Tesla Roadster uses an AC motor descended directly from Tesla's original 1882 design. The Tesla Roadster, the company's first vehicle, was the first production automobile to use lithium-ion battery cells and the first production EV with a range greater than 200 miles (320 km) per charge.",
       "title":"Tesla",
-      "website":"www.tesla.com"
+      "website":"www.tesla.com",
+       "category":"USA",
    },
    {  
       "founded":"1937",
@@ -1903,14 +2072,16 @@ export default {
       "icon":require('../images/Toyota-logo.jpg'),
       "overview":"Toyota Motor Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz. Toyota Motor Corporation produces vehicles under five brands, including the Toyota brand, Hino, Lexus, Ranz, and Daihatsu. It also holds a 16.66% stake in Fuji Heavy Industries, a 5.9% stake in Isuzu, a 3.58% stake in the Yamaha Motor Company, and a 0.27% stake in Tesla, as well as joint-ventures with two in China (GAC Toyota and Sichuan FAW Toyota Motor), one in India (Toyota Kirloskar), one in the Czech Republic (TPCA), along with several \"nonautomotive\" companies. TMC is part of the Toyota Group, one of the largest conglomerates in the world.",
       "title":"Toyota",
-      "website":"www.toyota.com"
+      "website":"www.toyota.com",
+       "category":"JPN, Popular"
    },
    {  
       "founded":"1885",
       "hq":"Coventry, England, United Kingdom",
       "icon":require('../images/Triumph-logo.jpg'),
       "overview":"The Triumph Motor Company was a British car and motor manufacturing company. The Triumph marque (trade-name) is owned currently by BMW. The marque had its origins in 1885 when Siegfried Bettmann (1863–1951) of Nuremberg formed S. Bettmann & Co and started importing bicycles from Europe and selling them under his own trade name in London. The trade name became \"Triumph\" the following year, and in 1887 Bettmann was joined by a partner, Moritz (Maurice) Schulte, also from Germany. In 1889 the businessmen started producing their own bicycles in Coventry, England.",
-      "title":"Triumph"
+      "title":"Triumph",
+       "category":"UK",
    },
    {  
       "founded":"1995",
@@ -1945,7 +2116,8 @@ export default {
       "icon":require('../images/Vauxhall-logo.jpg'),
       "overview":"In 2008 Vauxhall released a revised version of the 2005 logo. Bill Parfitt, Vauxhall’s Managing Director, said, \"While the new-look Griffin pays homage to our 100 year-plus manufacturing heritage in the UK, it also encapsulates Vauxhall’s fresh design philosophy, first showcased in the current Astra, and set to continue with Insignia.\"\\n\"The Vauxhall logo is based on a mythical creature called the \"Griffin\". The griffin is a legendary creature with the body of a lion and the head and often wings of an eagle. As the lion was traditionally considered the king of the beasts and the eagle the king of the birds, the griffin was thought to be an especially powerful and majestic creature. Griffins are normally known for guarding treasure. In antiquity it was a symbol of divine power and a guardian of the divine.\\n\"The griffin emblem, which is still in use, is derived from the coat of arms of Faulke de Breaute, a mercenary soldier who was granted the Manor of Luton for services to King John in the thirteenth century. By marriage, he also gained the rights to an area near London, south of the Thames. The house he built, Fulk's Hall, became known in time as Vauxhall. Vauxhall Iron Works adopted this emblem from the coat of arms to emphasise its links to the local area. When Vauxhall Iron Works moved to Luton in 1905, the griffin emblem coincidentally returned to its ancestral home.\\n",
       "title":"Vauxhall",
-      "website":"www.vauxhall.co.uk"
+      "website":"www.vauxhall.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1984",
@@ -1954,13 +2126,15 @@ export default {
       "icon":require('../images/Venturi-logo.jpg'),
       "overview":"",
       "title":"Venturi",
-      "website":"www.v-group.fr"
+      "website":"www.v-group.fr",
+       "category":"FRA",
    },
    {  
       "icon":require('../images/Viper-logo.jpg'),
       "overview":"The Dodge Viper is a sports car manufactured by Dodge (SRT for 2013 and 2014), a division of FCA US LLC from 1992 through 2017 having taken a brief hiatus from 2010-2013. Production of the two-seat sports car began at New Mack Assembly in 1991 and moved to Conner Avenue Assembly in October 1995.",
       "title":"Viper",
-      "website":"www.dodge.com/en/viper/"
+      "website":"www.dodge.com/en/viper/",
+       "category":"USA",
    },
    {  
       "founded":"1937",
@@ -1969,7 +2143,8 @@ export default {
       "icon":require('../images/Volkswagen-logo.jpg'),
       "overview":"\"Volkswagen is one of the global leaders in automotive industry and the largest European car manufacturer. The Volkswagen logo comprises of the company’s initials – a “V” placed over a “W” – and both these letters interact superbly with each other. The blue color in the Volkswagen logo symbolizes excellence, reliability and class – whereas the white color depicts nobility, purity and charm.\\n\"The color blends and the implied three-dimensionality were introduced to the Volkswagen logo in 2000.\\n\"In 1978 another change in occurred as the logo colors were inverted. The VW letters became white and were placed on blue background.\\n\"VW logo during the 1930s, initials surrounded by a stylized cogwheel and swastika wings.\\n",
       "title":"Volkswagen",
-      "website":"www.vw.com www.volkswagen.com"
+      "website":"www.vw.com www.volkswagen.com",
+       "category":"GER, Popular",
    },
    {  
       "founded":"1927",
@@ -1987,7 +2162,8 @@ export default {
       "icon":require('../images/Wanderer-logo.jpg'),
       "overview":"Wanderer was a German manufacturer of bicycles, motorcycles, automobiles, vans and other machinery. Established as Winklhofer & Jaenicke in 1896 by Johann Baptist Winklhofer und Richard Adolf Jaenicke, the company used the Wanderer brand name from 1911, making civilian automobiles until 1941 and military vehicles until 1945. The Wanderer Siegmar plant (now Chemnitz) of Auto Union were destroyed in early 1945, closing this chapter in the history of automobiles. Post-war efforts to restore East German auto industry concentrated on Auto Union facilities in Zwickau and Zschopau: Wanderer car production never recovered, with Auto Union relocating to Ingolstadt, West Germany, where the company was rebuilt based using the DKW and ultimately, the Audi brand.",
       "title":"Wanderer",
-      "website":"www.wanderer.eu (Bicycles)"
+      "website":"www.wanderer.eu (Bicycles)",
+       "category":"GER",
    },
     { 
       "founded":"1967",
@@ -1995,7 +2171,8 @@ export default {
       "icon":require('../images/Western-Star-logo.jpg'),
       "overview":"",
       "title":"Western Star",
-      "website":"www.westernstartrucks.com"
+      "website":"www.westernstartrucks.com",
+        "category":"USA",
    },
    {  
       "founded":"1982",
@@ -2004,7 +2181,8 @@ export default {
       "icon":require('../images/Westfield-logo.jpg'),
       "overview":"Westfield Sportscars are manufacturers of both factory built and kit versions of several two-seater, open top sportscars. Their main product line is a Lotus Seven inspired car - vehicles originally designed by Colin Chapman with only the bare essentials for motoring in order to give the rawest and most exhilarating driving experience.",
       "title":"Westfield",
-      "website":"www.westfield-sportscars.co.uk"
+      "website":"www.westfield-sportscars.co.uk",
+       "category":"UK",
    },
    {  
       "founded":"1988",
@@ -2013,7 +2191,8 @@ export default {
       "icon":require('../images/Wiesmann-logo.jpg'),
       "overview":"",
       "title":"Wiesmann",
-      "website":"www.wiesmann.com"
+      "website":"www.wiesmann.com",
+       "category":"GER",
    },
    {  
       "founded":"1908",
@@ -2021,7 +2200,8 @@ export default {
       "hq":"Toledo, Ohio, United States",
       "icon":require('../images/Willys-logo.jpg'),
       "overview":"Willys was a brand name used by Willys-Overland Motors, an American automobile company best known for its design and production of military Jeeps (MBs) and civilian versions (CJs) during the 20th century.",
-      "title":"Willys"
+      "title":"Willys",
+       "category":"USA",
    },
    {  
       "founded":"2012",
@@ -2038,7 +2218,8 @@ export default {
       "icon":require('../images/Wuling-logo.jpg'),
       "overview":"SAIC-GM-Wuling Automobile (上汽通用五菱汽车股份有限公司 and abbreviated as SGMW) is a joint venture between SAIC Motor, General Motors, and Liuzhou Wuling Motors Co Ltd. Based in Liuzhou, Guangxi Zhuang Autonomous Region, in southwestern China, it makes commercial and consumer vehicles sold in China under the Wuling and Baojun marques, respectively. SGMW is one of the largest manufacturers of microvans in China. Both SGMW and Liuzhou Wuling Automobile Industry Co. Ltd. use the Wuling brand name and the red, five-diamond \"W\" logo.",
       "title":"Wuling",
-      "website":"www.sgmw.com.cn"
+      "website":"www.sgmw.com.cn",
+       "category":"CHN",
    },
    {  
       "founded":"1953",
@@ -2047,7 +2228,8 @@ export default {
       "icon":require('../images/Yulon-logo.jpg'),
       "overview":"Yulon Motor (Chinese: 裕隆汽車; pinyin: Yùlóng Qìchē) is a Taiwanese automaker and importer. Taiwan's biggest automaker as of 2010, Yulon is known for building Nissan models under license. The original romanization of the company's name is Yue Loong, but in 1992 the company renewed its logo and switched to the shorter Yulon name. Historically, it is one of Taiwan's \"big four\" automakers. Incorporated in September 1953 as a machinery company by Ching-Ling Yen, today Yulon Motor Co., Ltd. is part of the Yulon Group, a Taiwanese conglomerate.",
       "title":"Yulon",
-      "website":"www.yulon-motor.com.tw"
+      "website":"www.yulon-motor.com.tw",
+       "category":"CHN",
    },
    {  
       "hq":"Sombor, Serbia",
@@ -2072,7 +2254,8 @@ export default {
       "icon":require('../images/Zotye-logo.jpg'),
       "overview":"",
       "title":"Zotye",
-      "website":"www.zotye.com"
+      "website":"www.zotye.com",
+       "category":"CHN",
    }
 ]
   
