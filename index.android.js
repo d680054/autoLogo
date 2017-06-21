@@ -11,7 +11,7 @@ import {
     Text,
     View,
     ListView,
-    TouchableHighlight,
+    TouchableOpacity,
     TextInput,
     ScrollView,
     Image,
@@ -19,11 +19,14 @@ import {
 } from 'react-native';
 
 import {StackNavigator} from 'react-navigation';
+import ScrollableTabView from 'react-native-scrollable-tab-view';
+import TabBar from './TabBar';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import logo from './data/localData';
 
 const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-var width = Dimensions.get('window').width; //full width
+var winWidth = Dimensions.get('window').width; //full width
 
 class LogoListScreen extends Component {
 
@@ -34,6 +37,7 @@ class LogoListScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            search: '',
             showFinder: true,
             dataSource: ds.cloneWithRows(logo.info),
             filters: [
@@ -55,56 +59,73 @@ class LogoListScreen extends Component {
     render() {
         return (
 
-            <View style={styles.container}>
-                <View style={styles.filterBanner}>
-                    <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}
-                                style={{marginBottom: 0, marginLeft: 10, marginRight: 0}}>
-                        {
-                            this.state.filters.map((item, index) => (
-                                <TouchableHighlight key={item.id} onPress={this.filterCountry.bind(this, item.name)}>
-                                    <View  style={styles.filter}>
-                                        <Text style={{color: 'white', fontWeight: 'bold'}}>{item.name}</Text>
-                                    </View>
-                                </TouchableHighlight>
-                            ))
-                        }
-                    </ScrollView>
-                    {this.state.showFinder && <TouchableHighlight onPress={this.toggleFinder.bind(this)}>
-                        <Image source={require('./images/finder.png')}
-                               style={{width: 25, height: 25, marginLeft: 15}}/>
-                    </TouchableHighlight>}
+            <ScrollableTabView tabBarPosition="bottom" scrollWithoutAnimation={true}
+                               style={{ }}
+                               initialPage={0}
+                               renderTabBar={() => <TabBar />}
+            >
+                <View tabLabel="ios-car" style={styles.tabView}>
 
-                    {!this.state.showFinder &&
-                    <View style={{borderWidth:1, borderColor: '#e9e9e9',flexDirection: 'row',marginRight:10,borderRadius: 5,alignItems:'center'}}>
-                        <Image source={require('./images/finder.png')} style={{borderWidth:0, borderColor:'red',width: 25, height: 25, margin: 10}}/>
-                        <View style={{flex:5}}>
-                            <TextInput style={styles.searchInput} underlineColorAndroid='transparent'
-                                       placeholder="Search..."
-                                       onChangeText={(text) => {
-                                           var rows = [];
-                                           for (var i = 0; i < logo.info.length; i++) {
-                                               var title = logo.info[i].title.toLowerCase();
-                                               if (title.search(text.toLowerCase()) !== -1) {
-                                                   rows.push(logo.info[i]);
-                                               }
-                                           }
-                                           this.setState({dataSource: ds.cloneWithRows(rows)});
-                                       }}/>
+                    <View style={styles.container}>
+                        <View style={styles.filterBanner}>
+                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}
+                                        style={{marginBottom: 0, marginLeft: 10, marginRight: 0}}>
+                                {
+                                    this.state.filters.map((item, index) => (
+                                        <TouchableOpacity key={item.id} onPress={this.filterCountry.bind(this, item.name)}>
+                                            <View  style={styles.filter}>
+                                                <Text style={{color: 'white', fontWeight: 'bold'}}>{item.name}</Text>
+                                            </View>
+                                        </TouchableOpacity>
+                                    ))
+                                }
+                            </ScrollView>
+                            {this.state.showFinder && <TouchableOpacity onPress={this.toggleFinder.bind(this)}>
+                                <Icon name="ios-search" size={25} style={{width: 25, height: 25,marginLeft: 5}}/>
+                            </TouchableOpacity>}
+
+                            {!this.state.showFinder &&
+                            <View style={{height:35, width: winWidth-22, borderWidth:1, borderColor:'#e9e9e9',flexDirection: 'row',marginRight:10,borderRadius: 35, justifyContent:'center',alignItems:'center'}}>
+                                <TouchableOpacity onPress={this.toggleFinder.bind(this)}>
+                                    <Icon name="md-arrow-back" size={25} style={{borderWidth:0, borderColor:'red',width: 25, height: 25, margin: 10}}/>
+                                </TouchableOpacity>
+                                <View style={{flex:5}}>
+                                    <TextInput ref={component => this._textInput = component} style={styles.searchInput} underlineColorAndroid='transparent'
+                                               placeholder="Search..."
+                                               onChangeText={(text) => {
+                                                   var rows = [];
+                                                   for (var i = 0; i < logo.info.length; i++) {
+                                                       var title = logo.info[i].title.toLowerCase();
+                                                       if (title.search(text.toLowerCase()) !== -1) {
+                                                           rows.push(logo.info[i]);
+                                                       }
+                                                   }
+                                                   this.setState({dataSource: ds.cloneWithRows(rows)});
+                                                   this.setState({search: text})
+                                               }}/>
+                                </View>
+
+                                <TouchableOpacity onPress={this.clearText}>
+                                    <Icon name="ios-close" size={25} style={{width: 25, height: 25, paddingLeft:10, margin: 5}}/>
+                                </TouchableOpacity>
+                            </View>}
+
                         </View>
-
-                        <TouchableHighlight onPress={this.toggleFinder.bind(this)}>
-                            <Image source={require('./images/close.png')} style={{ borderWidth:0,borderColor:'red', margin:5, width: 25, height: 30}}/>
-                        </TouchableHighlight>
-                    </View>}
-
+                        <ListView
+                            enableEmptySections
+                            dataSource={this.state.dataSource}
+                            renderRow={this.renderRow.bind(this)}
+                        />
+                    </View>
                 </View>
-                <ListView
-                    enableEmptySections
-                    dataSource={this.state.dataSource}
-                    renderRow={this.renderRow.bind(this)}
-                />
-            </View>
 
+                <ScrollView tabLabel="ios-paper" style={styles.tabView}>
+                    <View style={styles.card}>
+                        <Text>Bitch!! Jeremy!</Text>
+                    </View>
+                </ScrollView>
+
+            </ScrollableTabView>
         );
     }
 
@@ -112,7 +133,7 @@ class LogoListScreen extends Component {
     renderRow(rowData, sectionId, rowId) {
         const {navigate} = this.props.navigation;
         return (
-            <TouchableHighlight underlayColor='#D3D3D3' onPress={() => navigate('Detail', {
+            <TouchableOpacity underlayColor='#D3D3D3' onPress={() => navigate('Detail', {
                 title: rowData.title,
                 icon: rowData.icon,
                 founder: rowData.founder,
@@ -121,7 +142,7 @@ class LogoListScreen extends Component {
                 website: rowData.website,
                 overview: rowData.overview
             })}
-                                title="Chat with Lucy">
+                              title="Chat with Lucy">
 
                 <View style={styles.itemStyle}>
                     <Image source={rowData.icon} style={styles.imageStyle}/>
@@ -130,7 +151,7 @@ class LogoListScreen extends Component {
                         <Text style={{marginBottom: 5, fontSize: 13, color: 'green'}}>简介</Text>
                     </View>
                 </View>
-            </TouchableHighlight>
+            </TouchableOpacity>
         );
     }
 
@@ -155,6 +176,20 @@ class LogoListScreen extends Component {
             }
         }
         this.setState({dataSource: ds.cloneWithRows(rows)});
+    }
+
+    clearText = () => {
+        let text = this.state.search;
+        console.info(text);
+        if (!text) {
+            this.setState({
+                showFinder: !this.state.showFinder,
+            });
+        }
+
+        this._textInput.setNativeProps({text: ''});
+        this.setState({search: ''})
+
     }
 }
 
@@ -203,6 +238,24 @@ var styles = StyleSheet.create({
         backgroundColor: '#f8f8f8',
         justifyContent: 'center',
     },
+    tabView: {
+        flex: 1,
+        padding: 0,
+        backgroundColor: 'rgba(8,0,0,0.01)',
+    },
+    card: {
+        borderWidth: 1,
+        backgroundColor: '#fff',
+        borderColor: 'rgba(0,0,0,0.1)',
+        margin: 0,
+        height: 100,
+        padding: 0,
+        shadowColor: '#ccc',
+        shadowOffset: { width: 2, height: 2, },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
+    },
+
 
     itemStyle: {
         // 主轴方向
@@ -214,9 +267,13 @@ var styles = StyleSheet.create({
         marginLeft: 10,
         marginRight: 10,
         borderRightWidth: 2,
-        borderBottomWidth: 3,
+        borderBottomWidth: 2,
         borderColor: '#e9e9e9',
         backgroundColor: 'white',
+        shadowColor: '#ccc',
+        shadowOffset: { width: 2, height: 2, },
+        shadowOpacity: 0.5,
+        shadowRadius: 2,
     },
 
     imageStyle: {
@@ -252,23 +309,27 @@ var styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 15,
         borderWidth: 1,
-        borderColor: 'green',
-        backgroundColor: 'green',
+        borderColor: '#009688',
+        backgroundColor: '#009688',
         display: 'flex',
         marginRight: 10,
         paddingLeft: 15,
         paddingRight: 15,
         paddingTop: 6,
         paddingBottom: 6,
+
+        shadowColor: '#ccc',
+        shadowOffset: { width: 2, height: 2, },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
     },
     searchInput: {
         borderRadius: 0,
         borderWidth:0,
         borderColor: '#e9e9e9',
         fontSize: 18,
+        lineHeight:40,
         height:40,
-        paddingLeft: 3,
-
     }
 });
 
