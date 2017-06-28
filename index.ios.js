@@ -24,6 +24,7 @@ import ScrollableTabView from 'react-native-scrollable-tab-view';
 import TabBar from './TabBar';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Quiz from './quiz'
+import DetailScreen from './DetailScreen'
 
 import logo from './data/localData';
 
@@ -63,7 +64,7 @@ class LogoListScreen extends Component {
 
             <ScrollableTabView tabBarPosition="bottom" scrollWithoutAnimation={true}
                                style={{}}
-                               initialPage={1}
+                               initialPage={0}
                                renderTabBar={() => <TabBar />}
             >
                 <View tabLabel="ios-car" style={styles.tabView}>
@@ -148,7 +149,7 @@ class LogoListScreen extends Component {
                     <Image source={rowData.icon} style={styles.imageStyle}/>
                     <View style={styles.subItemStyle}>
                         <Text style={{marginTop: 5, fontSize: 17}}>{rowData.title}</Text>
-                        <Text style={{marginBottom: 5, fontSize: 13, color: 'green'}}>简介</Text>
+                        {rowData.hq&&<Text style={{marginBottom: 5, fontSize: 13, color: 'green'}}>{rowData.hq.substring(rowData.hq.lastIndexOf(",")+1, rowData.hq.length)}</Text>}
                     </View>
                 </View>
             </TouchableHighlight>
@@ -193,44 +194,6 @@ class LogoListScreen extends Component {
     }
 }
 
-class DetailScreen extends React.Component {
-    static navigationOptions = ({navigation}) => ({
-        title: `${navigation.state.params.title}`,
-    });
-
-    render() {
-        const {params} = this.props.navigation.state;
-
-        return (
-            <ScrollView style={{backgroundColor: '#f8f8f8',}}>
-                <View style={{marginTop:15, flexDirection: 'column'}}>
-                    <View style={styles.imageBK}><Image source={params.icon}/></View>
-
-                    <View style={{marginTop: 10}}>
-
-                        {params.founded && <View style={styles.labelRow}>
-                            <Text style={styles.labelText}>Founded:</Text>
-                            <Text style={{marginLeft:5, marginRight:10,}}>{params.founded}</Text></View>}
-
-                        {params.founder && <View style={styles.labelRow}><Text style={styles.labelText}>Founder:</Text><Text
-                            style={{marginLeft: 5}}>{params.founder}</Text></View>}
-
-                        {params.hq && <View style={styles.labelRow}><Text style={styles.labelText}>Headquarters:</Text><Text
-                            style={{marginLeft: 5}}>{params.hq}</Text></View>}
-
-                        {params.website && <View style={styles.labelRow}><Text style={styles.labelText}>Official Site:</Text><Text
-                            style={{marginLeft: 5}}>{params.website}</Text></View>}
-                    </View>
-                </View>
-                <View style={{marginLeft: 5}}>
-                    <Text style={styles.labelText}>Description:</Text>
-                    <Text>{params.overview}</Text>
-                </View>
-            </ScrollView>
-        );
-    }
-}
-
 
 const autoLogo = StackNavigator({
     Home: {screen: LogoListScreen},
@@ -250,8 +213,6 @@ var styles = StyleSheet.create({
         flexDirection:'column',
         borderWidth:0,
     },
-
-
 
     itemStyle: {
         // 主轴方向
@@ -279,19 +240,6 @@ var styles = StyleSheet.create({
         margin: 10
     },
 
-    imageStyleLarge: {
-        width: 240,
-        height: 200,
-    },
-    labelRow: {
-        flexDirection: 'row',
-        marginLeft: 10,
-        marginTop:5,
-
-    },
-    labelText: {
-        fontSize: 18,
-    },
     subItemStyle: {
         justifyContent: 'space-around'
     },
@@ -332,27 +280,6 @@ var styles = StyleSheet.create({
         height: 40,
     },
 
-    imageBK: {
-        // 主轴方向
-        // 下边框
-        flex: 3,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 1,
-        borderRadius: 5,
-        marginBottom: 5,
-        marginLeft: 10,
-        marginRight: 10,
-        borderRightWidth: 2,
-        borderBottomWidth: 2,
-        borderColor: '#e9e9e9',
-        backgroundColor: 'white',
-        shadowColor: '#ccc',
-        shadowOffset: { width: 2, height: 2, },
-        shadowOpacity: 0.5,
-        shadowRadius: 2,
-
-    },
 });
 
 AppRegistry.registerComponent('autoLogo', () => autoLogo);

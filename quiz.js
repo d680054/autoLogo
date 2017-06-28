@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import FlipCard from './FlipCard';
 
 import logo from './data/localData';
