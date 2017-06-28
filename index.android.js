@@ -12,6 +12,7 @@ import {
     View,
     ListView,
     TouchableOpacity,
+    TouchableHighlight,
     TextInput,
     ScrollView,
     Image,
@@ -22,6 +23,7 @@ import {StackNavigator} from 'react-navigation';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import TabBar from './TabBar';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Quiz from './quiz'
 
 import logo from './data/localData';
 
@@ -60,7 +62,7 @@ class LogoListScreen extends Component {
         return (
 
             <ScrollableTabView tabBarPosition="bottom" scrollWithoutAnimation={true}
-                               style={{ }}
+                               style={{}}
                                initialPage={0}
                                renderTabBar={() => <TabBar />}
             >
@@ -68,13 +70,13 @@ class LogoListScreen extends Component {
 
                     <View style={styles.container}>
                         <View style={styles.filterBanner}>
-                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}
+                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}
                                         style={{marginBottom: 0, marginLeft: 10, marginRight: 0}}>
                                 {
                                     this.state.filters.map((item, index) => (
                                         <TouchableOpacity key={item.id} onPress={this.filterCountry.bind(this, item.name)}>
                                             <View  style={styles.filter}>
-                                                <Text style={{color: 'white', fontWeight: 'bold'}}>{item.name}</Text>
+                                                <Text style={{color: '#fff38e', fontWeight: 'bold'}}>{item.name}</Text>
                                             </View>
                                         </TouchableOpacity>
                                     ))
@@ -119,10 +121,8 @@ class LogoListScreen extends Component {
                     </View>
                 </View>
 
-                <ScrollView tabLabel="ios-paper" style={styles.tabView}>
-                    <View style={styles.card}>
-                        <Text>Bitch!! Jeremy!</Text>
-                    </View>
+                <ScrollView tabLabel="ios-paper" contentContainerStyle={styles.tabView}>
+                    <Quiz/>
                 </ScrollView>
 
             </ScrollableTabView>
@@ -133,7 +133,7 @@ class LogoListScreen extends Component {
     renderRow(rowData, sectionId, rowId) {
         const {navigate} = this.props.navigation;
         return (
-            <TouchableOpacity underlayColor='#D3D3D3' onPress={() => navigate('Detail', {
+            <TouchableHighlight activeOpacity={0.2} underlayColor='white' onPress={() => navigate('Detail', {
                 title: rowData.title,
                 icon: rowData.icon,
                 founder: rowData.founder,
@@ -142,7 +142,7 @@ class LogoListScreen extends Component {
                 website: rowData.website,
                 overview: rowData.overview
             })}
-                              title="Chat with Lucy">
+                                title="Chat with Lucy">
 
                 <View style={styles.itemStyle}>
                     <Image source={rowData.icon} style={styles.imageStyle}/>
@@ -151,7 +151,7 @@ class LogoListScreen extends Component {
                         <Text style={{marginBottom: 5, fontSize: 13, color: 'green'}}>简介</Text>
                     </View>
                 </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
         );
     }
 
@@ -202,26 +202,31 @@ class DetailScreen extends React.Component {
         const {params} = this.props.navigation.state;
 
         return (
-            <View style={{backgroundColor: 'white'}}>
-                <View style={{flexDirection: 'column'}}>
-                    <View style={{justifyContent: 'center', alignItems: 'center'}}><Image source={params.icon}
-                                                                                          style={styles.imageStyleLarge}/></View>
+            <ScrollView style={{backgroundColor: '#f8f8f8',}}>
+                <View style={{marginTop:15, flexDirection: 'column'}}>
+                    <View style={styles.imageBK}><Image source={params.icon}/></View>
+
                     <View style={{marginTop: 10}}>
-                        <View style={styles.labelRow}><Text>Founded:</Text><Text
-                            style={{marginLeft: 5}}>{params.founded}</Text></View>
-                        <View style={styles.labelRow}><Text>Founder:</Text><Text
-                            style={{marginLeft: 5}}>{params.founder}</Text></View>
-                        <View style={styles.labelRow}><Text>Headquarters:</Text><Text
-                            style={{marginLeft: 5}}>{params.hq}</Text></View>
-                        <View style={styles.labelRow}><Text>Official Site:</Text><Text
-                            style={{marginLeft: 5}}>{params.website}</Text></View>
+
+                        {params.founded && <View style={styles.labelRow}>
+                            <Text style={styles.labelText}>Founded:</Text>
+                            <Text style={{marginLeft:5, marginRight:10,}}>{params.founded}</Text></View>}
+
+                        {params.founder && <View style={styles.labelRow}><Text style={styles.labelText}>Founder:</Text><Text
+                            style={{marginLeft: 5}}>{params.founder}</Text></View>}
+
+                        {params.hq && <View style={styles.labelRow}><Text style={styles.labelText}>Headquarters:</Text><Text
+                            style={{marginLeft: 5}}>{params.hq}</Text></View>}
+
+                        {params.website && <View style={styles.labelRow}><Text style={styles.labelText}>Official Site:</Text><Text
+                            style={{marginLeft: 5}}>{params.website}</Text></View>}
                     </View>
                 </View>
                 <View style={{marginLeft: 5}}>
-                    <Text>Description:</Text>
+                    <Text style={styles.labelText}>Description:</Text>
                     <Text>{params.overview}</Text>
                 </View>
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -242,19 +247,10 @@ var styles = StyleSheet.create({
         flex: 1,
         padding: 0,
         backgroundColor: 'rgba(8,0,0,0.01)',
+        flexDirection:'column',
+        borderWidth:0,
     },
-    card: {
-        borderWidth: 1,
-        backgroundColor: '#fff',
-        borderColor: 'rgba(0,0,0,0.1)',
-        margin: 0,
-        height: 100,
-        padding: 0,
-        shadowColor: '#ccc',
-        shadowOffset: { width: 2, height: 2, },
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-    },
+
 
 
     itemStyle: {
@@ -284,12 +280,17 @@ var styles = StyleSheet.create({
     },
 
     imageStyleLarge: {
-        width: 220,
+        width: 240,
         height: 200,
     },
     labelRow: {
         flexDirection: 'row',
-        marginLeft: 5,
+        marginLeft: 10,
+        marginTop:5,
+
+    },
+    labelText: {
+        fontSize: 18,
     },
     subItemStyle: {
         justifyContent: 'space-around'
@@ -309,15 +310,14 @@ var styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 15,
         borderWidth: 1,
-        borderColor: '#009688',
-        backgroundColor: '#009688',
+        borderColor: 'rgb(59,89,152)',
+        backgroundColor: 'rgb(59,89,152)',
         display: 'flex',
         marginRight: 10,
         paddingLeft: 15,
         paddingRight: 15,
         paddingTop: 6,
         paddingBottom: 6,
-
         shadowColor: '#ccc',
         shadowOffset: { width: 2, height: 2, },
         shadowOpacity: 0.5,
@@ -325,12 +325,34 @@ var styles = StyleSheet.create({
     },
     searchInput: {
         borderRadius: 0,
-        borderWidth:0,
+        borderWidth: 0,
         borderColor: '#e9e9e9',
         fontSize: 18,
-        lineHeight:40,
-        height:40,
-    }
+        lineHeight: 40,
+        height: 40,
+    },
+
+    imageBK: {
+        // 主轴方向
+        // 下边框
+        flex: 3,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderRadius: 5,
+        marginBottom: 5,
+        marginLeft: 10,
+        marginRight: 10,
+        borderRightWidth: 2,
+        borderBottomWidth: 2,
+        borderColor: '#e9e9e9',
+        backgroundColor: 'white',
+        shadowColor: '#ccc',
+        shadowOffset: { width: 2, height: 2, },
+        shadowOpacity: 0.5,
+        shadowRadius: 2,
+
+    },
 });
 
 AppRegistry.registerComponent('autoLogo', () => autoLogo);
