@@ -15,6 +15,7 @@ import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import FlipCard from './FlipCard';
 
 import logo from './data/localData';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const MIN = 0;
 const MAX = 250;
@@ -34,17 +35,21 @@ export default class Quiz extends Component {
             item2:'#009688',
             item3:'#009688',
             item4:'#009688',
-            btnTxt: 'SKIP',
-            disableChoose: false,
+            btnTxt: 'Start',
+            disableChoose: true,
             pass:0,
-            total:0,
+            total:50,
             countDown:10,
             isClickable: false,
+            iconFace1: 'emoticon-neutral',
+            iconFace2: 'emoticon-neutral',
+            iconFace3: 'emoticon-neutral',
+            iconFace4: 'emoticon-neutral',
         };
     }
 
     componentDidMount() {
-        this.genRandomQA();
+        //this.genRandomQA();
     }
 
     componentWillUnmount() {
@@ -115,7 +120,6 @@ export default class Quiz extends Component {
 
 
 
-
                 <View style={{flex: 5, justifyContent: 'space-around', borderWidth: 0}}>
                     <View style={{flexDirection:'row', justifyContent:'space-between'}}>
                         {false&&<View style={{paddingLeft:20}}><Text>Identify this car logo.</Text></View>}
@@ -125,24 +129,28 @@ export default class Quiz extends Component {
                         <TouchableOpacity style={[styles.optionItem, {borderColor:this.state.item1, backgroundColor: this.state.item1 }]} onPress={this.checkAnswer1.bind(this,this.state.answers[0])}>
                             <Text style={styles.optionText}>{this.state.answers[0]}</Text>
                             {false&&<Text>{this.state.title}</Text>}
+                            <Icon name={this.state.iconFace1} size={38} color="white"/>
                         </TouchableOpacity>
                     </View>
                     <View>
                         <TouchableOpacity style={[styles.optionItem, {borderColor:this.state.item2, backgroundColor: this.state.item2 }]} onPress={this.checkAnswer2.bind(this,this.state.answers[1])}>
                             <Text style={styles.optionText}>{this.state.answers[1]}</Text>
                             {false&&<Text>{this.state.title}</Text>}
+                            <Icon name={this.state.iconFace2} size={38} color="white"/>
                         </TouchableOpacity>
                     </View>
                     <View>
                         <TouchableOpacity style={[styles.optionItem, {borderColor:this.state.item3, backgroundColor: this.state.item3 }]} onPress={this.checkAnswer3.bind(this,this.state.answers[2])}>
                             <Text style={styles.optionText}>{this.state.answers[2]}</Text>
                             {false&&<Text>{this.state.title}</Text>}
+                            <Icon name={this.state.iconFace3} size={38} color="white"/>
                         </TouchableOpacity>
                     </View>
                     <View>
                         <TouchableOpacity style={[styles.optionItem, {borderColor:this.state.item4, backgroundColor: this.state.item4 }]} onPress={this.checkAnswer4.bind(this,this.state.answers[3])}>
                             <Text style={styles.optionText}>{this.state.answers[3]}</Text>
                             {false&&<Text>{this.state.title}</Text>}
+                            <Icon name={this.state.iconFace4} size={38} color="white"/>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -162,9 +170,10 @@ export default class Quiz extends Component {
             if (value == posi) right = tmp;
         }
         this.setState({icon: logo.info[right].icon, title: rows[posi], answers: rows,
-            item1:'#4F81BD', item2:'#4F81BD', item3:'#4F81BD', item4:'#4F81BD',
-            btnTxt: 'SKIP', disableChoose:false, isClickable: false, total: this.state.total+1,
-            countDown: 10, });
+            item1:'rgb(36,106,184)', item2:'rgb(36,106,184)', item3:'rgb(36,106,184)', item4:'rgb(36,106,184)',
+            btnTxt: 'SKIP', disableChoose:false, isClickable: false,
+            countDown: 10, iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
+            iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral' });
 
         clearInterval(interval);
         this.countDown();
@@ -183,10 +192,10 @@ export default class Quiz extends Component {
 
     checkAnswer1(item) {
         if (this.state.title === item) {
-            this.setState({item1 :'#009688', pass: this.state.pass+1});
+            this.setState({item1 :'rgb(172,224,0)', pass: this.state.pass+1, iconFace1: 'emoticon'});
 
         } else {
-            this.setState({item1 :'tomato'});
+            this.setState({item1 :'red',  iconFace1: 'emoticon-sad'});
         }
         this.setState({btnTxt: 'NEXT', disableChoose: true, isClickable: true});
         clearInterval(interval);
@@ -194,9 +203,9 @@ export default class Quiz extends Component {
 
     checkAnswer2(item) {
         if (this.state.title === item) {
-            this.setState({item2 :'#009688', pass: this.state.pass+1});
+            this.setState({item2 :'rgb(172,224,0)', pass: this.state.pass+1, iconFace2: 'emoticon'});
         } else {
-            this.setState({item2 :'tomato'});
+            this.setState({item2 :'red', iconFace2: 'emoticon-sad'});
         }
         this.setState({btnTxt: 'NEXT', disableChoose: true, isClickable: true});
         clearInterval(interval);
@@ -204,9 +213,9 @@ export default class Quiz extends Component {
 
     checkAnswer3(item) {
         if (this.state.title === item) {
-            this.setState({item3 :'#009688', pass: this.state.pass+1});
+            this.setState({item3 :'rgb(172,224,0)', pass: this.state.pass+1, iconFace3: 'emoticon'});
         } else {
-            this.setState({item3 :'tomato'});
+            this.setState({item3 :'red', iconFace3: 'emoticon-sad'});
         }
         this.setState({btnTxt: 'NEXT', disableChoose: true, isClickable: true});
         clearInterval(interval);
@@ -214,9 +223,9 @@ export default class Quiz extends Component {
 
     checkAnswer4(item) {
         if (this.state.title === item) {
-            this.setState({item4 :'#009688', pass: this.state.pass+1});
+            this.setState({item4 :'rgb(172,224,0)', pass: this.state.pass+1, iconFace4: 'emoticon'});
         } else {
-            this.setState({item4 :'tomato'});
+            this.setState({item4 :'red', iconFace4: 'emoticon-sad'});
         }
         this.setState({btnTxt: 'NEXT', disableChoose: true, isClickable: true});
         clearInterval(interval);
@@ -228,7 +237,7 @@ class Option extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            answerColor: 'tomato',
+            answerColor: 'red',
         };
     }
 
@@ -299,8 +308,8 @@ var styles = StyleSheet.create({
         borderWidth:1,
         width:90,
         borderRadius:20,
-        backgroundColor:'#4F81BD',
-        borderColor: '#4F81BD',
+        backgroundColor:'rgb(59,89,152)',
+        borderColor: 'rgb(59,89,152)',
         shadowOffset: { width: 2, height: 2, },
         shadowOpacity: 0.5,
         shadowRadius: 2,

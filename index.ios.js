@@ -94,12 +94,20 @@ class LogoListScreen extends Component {
                                 </TouchableOpacity>
                                 <View style={{flex:5}}>
                                     <TextInput ref={component => this._textInput = component} style={styles.searchInput} underlineColorAndroid='transparent'
-                                               placeholder="Search..."
+                                               placeholder="Search by name or country"
+                                               autoFocus={true}
                                                onChangeText={(text) => {
                                                    var rows = [];
                                                    for (var i = 0; i < logo.info.length; i++) {
                                                        var title = logo.info[i].title.toLowerCase();
-                                                       if (title.search(text.toLowerCase()) !== -1) {
+                                                       var country = logo.info[i].category.toLowerCase();
+
+                                                       var hq = logo.info[i].hq == null? "":logo.info[i].hq.toLowerCase() ;
+                                                       hq = hq.substring(hq.lastIndexOf(",")+1, hq.length);
+
+                                                       if (title.search(text.toLowerCase()) !== -1
+                                                           || country.search(text.toLowerCase()) !== -1
+                                                           || hq.search(text.toLowerCase()) !== -1) {
                                                            rows.push(logo.info[i]);
                                                        }
                                                    }
