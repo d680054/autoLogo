@@ -2375,7 +2375,7 @@ export default {
       "title":"Zotye",
       "website":"www.zotye.com",
        "category":"CHN",
-   }
+   },
 ]
   
 }

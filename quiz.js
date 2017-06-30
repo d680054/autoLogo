@@ -18,7 +18,7 @@ import logo from './data/localData';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const MIN = 0;
-const MAX = 250;
+const MAX = 248;
 const height=Dimensions.get('window').height;
 const width=Dimensions.get('window').width;
 
@@ -31,15 +31,15 @@ export default class Quiz extends Component {
             icon: null,
             title: '',
             answers: '',
-            item1:'#009688',
-            item2:'#009688',
-            item3:'#009688',
-            item4:'#009688',
+            item1:'rgb(36,106,184)',
+            item2:'rgb(36,106,184)',
+            item3:'rgb(36,106,184)',
+            item4:'rgb(36,106,184)',
             btnTxt: 'Start',
             disableChoose: true,
             pass:0,
-            total:50,
-            countDown:10,
+            total:0,
+            countDown:0,
             isClickable: false,
             iconFace1: 'emoticon-neutral',
             iconFace2: 'emoticon-neutral',
@@ -67,7 +67,7 @@ export default class Quiz extends Component {
                     borderWidth: 0,
                     alignItems: 'center'
                 }}>
-                    <View style={{flex:1}}><Text style={{alignSelf:'center', fontSize:35, color:'rgb(59,89,152)'}}>{this.state.pass}/{this.state.total}</Text></View>
+                    <View style={{flex:1}}><Text style={{alignSelf:'center', fontSize:35, color:'rgb(59,89,152)'}}>{this.state.pass}/50</Text></View>
                     <View style={{flex:1, borderWidth:0}}>
                         {Platform.OS === 'ios'&&<AnimatedCircularProgress style={{alignSelf:'center'}}
                         size={70}
@@ -161,22 +161,33 @@ export default class Quiz extends Component {
 
 
     genRandomQA() {
-        let right = 0;
-        let rows = [];
-        let posi= Math.ceil(Math.random() * (5 - 1) - 1);
-        for (let value of [0,1,2,3]) {
-            let tmp = Math.ceil(Math.random() * (MAX - MIN) + MIN);
-            rows.push(logo.info[tmp].title);
-            if (value == posi) right = tmp;
+        if (this.state.total <= 50) {
+            let right = 0;
+            let rows = [];
+            let posi = Math.ceil(Math.random() * (5 - 1) - 1);
+            for (let value of [0, 1, 2, 3]) {
+                let tmp = Math.ceil(Math.random() * (MAX - MIN) + MIN);
+                console.info('the tmp:' + tmp);
+                rows.push(logo.info[tmp].title);
+                if (value == posi) right = tmp;
+            }
+            this.setState({
+                icon: logo.info[right].icon, title: rows[posi], answers: rows,
+                item1: 'rgb(36,106,184)', item2: 'rgb(36,106,184)', item3: 'rgb(36,106,184)', item4: 'rgb(36,106,184)',
+                btnTxt: 'SKIP', disableChoose: false, isClickable: false,
+                countDown: 10, total: this.state.total + 1,
+                iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
+                iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral'
+            });
+            this.countDown();
+       } else if (this.state.total > 51){
+            if (this.state.pass > 45) {
+                //pass the result
+            } else {
+                //fail the test.
+            }
         }
-        this.setState({icon: logo.info[right].icon, title: rows[posi], answers: rows,
-            item1:'rgb(36,106,184)', item2:'rgb(36,106,184)', item3:'rgb(36,106,184)', item4:'rgb(36,106,184)',
-            btnTxt: 'SKIP', disableChoose:false, isClickable: false,
-            countDown: 10, iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
-            iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral' });
-
-        clearInterval(interval);
-        this.countDown();
+       clearInterval(interval);
     }
 
     countDown() {
