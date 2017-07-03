@@ -156,7 +156,7 @@ class LogoListScreen extends Component {
                 <View style={styles.itemStyle}>
                     <Image source={rowData.icon} style={styles.imageStyle}/>
                     <View style={styles.subItemStyle}>
-                        <Text style={{marginTop: 5, fontSize: 17}}>{rowData.title}</Text>
+                        <Text style={{marginTop: 5, fontSize: 17, color:'black'}}>{rowData.title}</Text>
                         {rowData.hq&&<Text style={{marginBottom: 5, fontSize: 13, color: 'green'}}>{rowData.hq.substring(rowData.hq.lastIndexOf(",")+1, rowData.hq.length)}</Text>}
                     </View>
                 </View>
@@ -189,7 +189,6 @@ class LogoListScreen extends Component {
 
     clearText = () => {
         let text = this.state.search;
-        console.info(text);
         if (!text) {
             this.setState({
                 showFinder: !this.state.showFinder,

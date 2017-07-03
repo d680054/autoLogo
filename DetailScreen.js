@@ -4,10 +4,11 @@ import {
     StyleSheet,
     Text,
     View,
-    TouchableHighlight,
+    TouchableOpacity,
     Image,
     Dimensions,
     ScrollView,
+    Linking,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -58,7 +59,12 @@ export default class DetailScreen extends React.Component {
                             <View style={[styles.leftIcon,{borderColor: 'rgb(172,224,0)', backgroundColor:'rgb(172,224,0)',}]}>
                                 <Icon name="md-globe" size={38} color="white"/>
                             </View>
-                            <View style={{flex:3}}>{params.website&&<Text style={{color: 'black', textDecorationLine:'underline'}}>{params.website}</Text>}</View>
+                            <View style={{flex:3}}>{params.website&&
+                            <TouchableOpacity onPress={() => {
+                                Linking.openURL("http://"+params.website)}}>
+                                <Text style={{color: 'black', textDecorationLine:'underline'}}>{params.website}</Text>
+                            </TouchableOpacity>}
+                             </View>
                         </View>
                     </View>
 

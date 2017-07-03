@@ -9,6 +9,8 @@ import {
     Button,
     Dimensions,
     Platform,
+    AsyncStorage,
+    Alert,
 } from 'react-native';
 
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
@@ -39,40 +41,76 @@ export default class Quiz extends Component {
             disableChoose: true,
             pass:0,
             total:0,
-            countDown:0,
+            countDown: 1,
             isClickable: false,
             iconFace1: 'emoticon-neutral',
             iconFace2: 'emoticon-neutral',
             iconFace3: 'emoticon-neutral',
             iconFace4: 'emoticon-neutral',
+            notice: '',
+            levelObj: {},
+            flip: false,
         };
     }
 
     componentDidMount() {
-        //this.genRandomQA();
+        //AsyncStorage.removeItem("levelObj");
+        //load the level status, if empty load the defaults value(level one)
+        AsyncStorage.getItem("levelObj").then((value) => {
+            if (value === null) {
+                var value = {
+                    level: 1,
+                    countDown: 7,
+                }
+            } else {
+                value = JSON.parse(value);
+            }
+
+            var tmp = "Level " + value.level;
+            this.setState({levelObj: value, notice: tmp});
+        }).done();
     }
 
     componentWillUnmount() {
         clearInterval(interval);
     }
 
+    componentWillReceiveProps(nextProps) {
+       console.info("componentWillReceiveProps  called");
+    }
+
     render() {
+
+        var badges = [];
+        if (this.state.levelObj.allPass) {
+            badges.push(<Icon key={99} name="seal" size={25} color="gold"/>);
+        }
+        for (var i = 1; i < this.state.levelObj.level; i++) {
+            badges.push(<Icon key={i} name="seal" size={25} color="gold"/>);
+        }
 
         return (
             <View style={styles.container}>
                 <View style={{
                     flexDirection: 'row',
-                    flex: 1.5,
-                    justifyContent: 'space-around',
+                    flex: 2,
+                    justifyContent: 'center',
                     borderWidth: 0,
                     alignItems: 'center'
                 }}>
-                    <View style={{flex:1}}><Text style={{alignSelf:'center', fontSize:35, color:'rgb(59,89,152)'}}>{this.state.pass}/50</Text></View>
+
+                    <View style={{flex:1.5,alignItems:'center', borderWidth:0,flexDirection:'column'}}>
+                        <View style={{flex:2,flexDirection:'row',alignSelf:'center'}}>
+                            <Text style={{borderWidth:0, alignSelf:'flex-end',fontSize:36, color:'green'}}>{this.state.pass}</Text>
+                            <Text style={{borderWidth:0, alignSelf:'flex-end',fontSize:22, color:'black'}}>/{this.state.total}</Text>
+                        </View>
+                        <View style={{flex:1,}}><Text style={{borderWidth:0, fontSize:12}}>50 Questions</Text></View>
+                    </View>
                     <View style={{flex:1, borderWidth:0}}>
                         {Platform.OS === 'ios'&&<AnimatedCircularProgress style={{alignSelf:'center'}}
                         size={70}
                         width={3}
-                        fill={Math.abs(-10 + this.state.countDown)*10}
+                        fill={Math.abs(-8 + this.state.countDown)*100/8}
                         prefill={100}
                         tintColor="silver"
                         backgroundColor="rgb(59,89,152)">{
@@ -86,16 +124,20 @@ export default class Quiz extends Component {
                         }
                         </AnimatedCircularProgress>}
 
-                        {Platform.OS === 'android' && <Text style={{fontSize:36,fontWeight:'bold', alignSelf:'center',color:'black'}}>
+                        {Platform.OS === 'android' && <Text style={{fontSize:45,fontWeight:'bold', alignSelf:'center',color:'black'}}>
                             { this.state.countDown }
                         </Text>}
-
-
                     </View>
-                    <View style={{flex:1}}>
-                        <TouchableOpacity  style={styles.nextBtn} onPress={this.genRandomQA.bind(this)}>
-                            <Text style={{fontWeight:'bold', fontSize:18,color:'#fff38e'}}>{this.state.btnTxt}</Text>
-                        </TouchableOpacity>
+
+                    <View style={{flex:1.5, borderWidth:0}}>
+                        <View style={{borderWidth:0,flexDirection:'row', marginRight:15, justifyContent:'flex-end'}}>
+                            {badges}
+                        </View>
+                        <View style={{borderWidth:0, height:40, justifyContent:'flex-end'}}>
+                            <TouchableOpacity  style={styles.nextBtn} onPress={this.genRandomQA.bind(this)}>
+                                <Text style={{fontWeight:'bold', fontSize:18,color:'#fff38e'}}>{this.state.btnTxt}</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
 
@@ -106,14 +148,14 @@ export default class Quiz extends Component {
                     perspective={2000}
                     flipHorizontal={true}
                     flipVertical={false}
-                    flip={true}
+                    flip={this.state.flip}
                     clickable={this.state.isClickable}>
                     <View style={[styles.face, {borderWidth:0, margin:12}]}>
                         <Image source={this.state.icon} style={{width: 200, height: 140}}/>
                     </View>
-
                     <View style={styles.back}>
                         <Text style={{marginTop:60, fontWeight:"bold", fontSize:30}}>{this.state.title}</Text>
+                        {!this.state.title&&<Text style={{fontWeight:'bold', marginTop:-15,fontSize:38,color:'green'}}>{this.state.notice}</Text>}
                     </View>
                 </FlipCard>
                 </View>
@@ -161,33 +203,93 @@ export default class Quiz extends Component {
 
 
     genRandomQA() {
-        if (this.state.total <= 50) {
+        clearInterval(interval);
+
+
+        if (this.state.total <= 49) {//49
             let right = 0;
             let rows = [];
             let posi = Math.ceil(Math.random() * (5 - 1) - 1);
             for (let value of [0, 1, 2, 3]) {
                 let tmp = Math.ceil(Math.random() * (MAX - MIN) + MIN);
-                console.info('the tmp:' + tmp);
                 rows.push(logo.info[tmp].title);
                 if (value == posi) right = tmp;
             }
             this.setState({
                 icon: logo.info[right].icon, title: rows[posi], answers: rows,
                 item1: 'rgb(36,106,184)', item2: 'rgb(36,106,184)', item3: 'rgb(36,106,184)', item4: 'rgb(36,106,184)',
-                btnTxt: 'SKIP', disableChoose: false, isClickable: false,
-                countDown: 10, total: this.state.total + 1,
+                btnTxt: 'SKIP', disableChoose: false, isClickable: false, flip: true,
+                countDown: this.state.levelObj.countDown, total: this.state.total + 1,
+                notice:"",
                 iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
                 iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral'
             });
             this.countDown();
-       } else if (this.state.total > 51){
-            if (this.state.pass > 45) {
-                //pass the result
+       } else if (this.state.total > 49){   //49
+            if (this.state.pass >= 45) {  //45
+                if (this.state.levelObj.level < 5) {
+                    var value = {
+                        level: this.state.levelObj.level +1,
+                        countDown: this.state.levelObj.countDown - 1,
+                    }
+                    AsyncStorage.setItem("levelObj", JSON.stringify(value));
+                    Alert.alert(
+                        'Congratulations',
+                        'You\'ve passed the level ' + this.state.levelObj.level + '!',
+                        [ {text: 'OK', onPress: () => {
+                            this.setState({
+                                icon: null, title: '',answers: '',
+                                item1: 'rgb(36,106,184)', item2: 'rgb(36,106,184)', item3: 'rgb(36,106,184)', item4: 'rgb(36,106,184)',
+                                btnTxt: 'Start', disableChoose: true, isClickable: false, flip: false,
+                                countDown: 1, total: 0, levelObj:value,
+                                notice: "Level " + value.level, pass:0,
+                                iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
+                                iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral'
+                            });
+                        }},],
+                    )
+                } else {
+                    var value = {
+                        level: this.state.levelObj.level,
+                        countDown: this.state.levelObj.countDown,
+                        allPass: true,
+                    }
+                    AsyncStorage.setItem("levelObj", JSON.stringify(value));
+                    Alert.alert(
+                        'Congratulations',
+                        'You\'ve passed all the levels!',
+                        [ {text: 'OK', onPress: () => {
+                            this.setState({
+                                icon: null, title: '',answers: '',
+                                item1: 'rgb(36,106,184)', item2: 'rgb(36,106,184)', item3: 'rgb(36,106,184)', item4: 'rgb(36,106,184)',
+                                btnTxt: 'Start', disableChoose: true, isClickable: false, flip: false,
+                                countDown: 0, total: 0, levelObj:value,
+                                notice: "Level " + this.state.levelObj.level, pass:0,
+                                iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
+                                iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral'
+                            });
+                        }},],
+                    )
+                }
+
             } else {
-                //fail the test.
+                Alert.alert(
+                    'Opps!!!',
+                    'You\'ve failed the level ' + this.state.levelObj.level + '!',
+                    [ {text: 'Again', onPress: () => {
+                        this.setState({
+                            icon: null, title: '',answers: '',
+                            item1: 'rgb(36,106,184)', item2: 'rgb(36,106,184)', item3: 'rgb(36,106,184)', item4: 'rgb(36,106,184)',
+                            btnTxt: 'Start', disableChoose: true, isClickable: false, flip: false,
+                            countDown: 0, total: 0,
+                            notice: "Level " + this.state.levelObj.level, pass:0,
+                            iconFace1: 'emoticon-neutral', iconFace2: 'emoticon-neutral',
+                            iconFace3: 'emoticon-neutral', iconFace4: 'emoticon-neutral'
+                        });
+                    }},],
+                )
             }
         }
-       clearInterval(interval);
     }
 
     countDown() {
@@ -312,6 +414,7 @@ var styles = StyleSheet.create({
     },
 
     nextBtn: {
+
         alignSelf:'center',
         height:30,
         justifyContent:'center',
